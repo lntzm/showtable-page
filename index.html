@@ -562,59 +562,2974 @@
       <p class="mt-4 text-center text-gray-600 dark:text-gray-300">
         Detailed pipeline visualizations demonstrating collaborative reflection and refinement.
       </p>
-
-      <!-- Horizontal showcase -->
-      <div class="mt-8 rounded-3xl p-6 glass dark:glass-dark">
-        <div class="flex gap-6 overflow-x-auto pb-2 snap-x snap-mandatory">
-          
-          <!-- Case 1: Qwen Case 1 -->
-          <div class="min-w-[320px] md:min-w-[420px] snap-start">
-            <div class="rounded-2xl overflow-hidden bg-white/30 dark:bg-white/5 h-[300px]">
-                <img src="assets/SM_qwen_case1.png" alt="Qwen Case 1" class="w-full h-full object-contain">
-            </div>
+<div class="mt-8 rounded-3xl p-6 glass dark:glass-dark">
+  <div class="flex gap-6 overflow-x-auto pb-2 snap-x snap-mandatory">
+    
+<!-- 案例1: 广告效果数据可视化 -->
+<div class="group/product min-w-[320px] md:min-w-[420px] snap-start relative cursor-pointer" onclick="openCaseDetail('case1')">
+  <div class="block group-hover/product:shadow-2xl relative overflow-hidden rounded-2xl bg-white/30 dark:bg-white/5 h-[300px]">
+    <!-- 悬停前: 数据表格 -->
+    <div class="object-cover object-center absolute h-full w-full inset-0 bg-white dark:bg-gray-900 transition-all duration-300 z-[1]" style="opacity: 1;">
+      <div class="p-6 h-full flex items-center justify-center">
+        <div class="w-full max-w-sm bg-white rounded-xl p-6 shadow-lg">
+          <h3 class="text-lg font-semibold text-gray-800 mb-4 text-center">Advertising Effectiveness by Medium</h3>
+          <div class="bg-white rounded-lg border border-gray-200 p-4">
+            <table class="w-full text-sm">
+              <thead class="border-b border-gray-200">
+                <tr>
+                  <th class="text-left py-3 text-gray-600 font-medium">Medium</th>
+                  <th class="text-right py-3 text-gray-600 font-medium">Percentage</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="border-b border-gray-100">
+                  <td class="py-3 text-gray-700">Magazine/Newspaper</td>
+                  <td class="text-right py-3 font-semibold text-blue-600">35%</td>
+                </tr>
+                <tr>
+                  <td class="py-3 text-gray-700">Billboard</td>
+                  <td class="text-right py-3 font-semibold text-orange-600">13%</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
-
-          <!-- Case 2: Qwen Case 2 -->
-          <div class="min-w-[320px] md:min-w-[420px] snap-start">
-            <div class="rounded-2xl overflow-hidden bg-white/30 dark:bg-white/5 h-[300px]">
-                <img src="assets/SM_qwen_case2.png" alt="Qwen Case 2" class="w-full h-full object-contain">
-            </div>
-          </div>
-
-          <!-- Case 3: Qwen Case 3 -->
-          <div class="min-w-[320px] md:min-w-[420px] snap-start">
-            <div class="rounded-2xl overflow-hidden bg-white/30 dark:bg-white/5 h-[300px]">
-                <img src="assets/SM_qwen_case3.png" alt="Qwen Case 3" class="w-full h-full object-contain">
-            </div>
-          </div>
-
-          <!-- Case 4: Wan Case 1 -->
-          <div class="min-w-[320px] md:min-w-[420px] snap-start">
-            <div class="rounded-2xl overflow-hidden bg-white/30 dark:bg-white/5 h-[300px]">
-                <img src="assets/SM_wan_case1.png" alt="Wan Case 1" class="w-full h-full object-contain">
-            </div>
-          </div>
-
-          <!-- Case 5: Wan Case 2 -->
-          <div class="min-w-[320px] md:min-w-[420px] snap-start">
-            <div class="rounded-2xl overflow-hidden bg-white/30 dark:bg-white/5 h-[300px]">
-                <img src="assets/SM_wan_case2.png" alt="Wan Case 2" class="w-full h-full object-contain">
-            </div>
-          </div>
-
-          <!-- Case 6: Methods Comparison -->
-          <div class="min-w-[320px] md:min-w-[420px] snap-start">
-            <div class="rounded-2xl overflow-hidden bg-white/30 dark:bg-white/5 h-[300px]">
-                <img src="assets/SM_methods_case.png" alt="Methods Comparison" class="w-full h-full object-contain">
-            </div>
-          </div>
-
-        </div>
-
-        <div class="mt-4 text-xs text-gray-500 text-center">
-          Tip: horizontally scroll to view more examples.
         </div>
       </div>
+    </div>
+        
+        <!-- 悬停后: 最终可视化 -->
+     <div class="object-cover object-center absolute h-full w-full inset-0 transition-all duration-300 z-[2]" style="opacity: 0;">
+      <img src="assets/case1_final.png" alt="Final 3D Visualization" class="w-full h-full object-contain p-4">
+    </div>
+  </div>
+      
+      <div class="absolute top-4 left-4 z-[3]">
+        <div class="backdrop-blur-xl bg-gradient-to-br from-white/40 to-white/20 dark:from-black/40 dark:to-black/20 border border-white/30 dark:border-white/15 px-4 py-2 rounded-full transition-all"
+             style="box-shadow: rgba(0, 0, 0, 0.12) 0px 8px 32px 0px, rgba(0, 0, 0, 0.08) 0px 2px 8px 0px, rgba(255, 255, 255, 0.3) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.1) 0px -1px 0px 0px inset;">
+          <span class="text-white text-sm font-semibold drop-shadow-md">Click to View Process</span>
+        </div>
+      </div>
+    </div>
+
+<!-- 案例2: 调查结果可视化 -->
+<div class="group/product min-w-[320px] md:min-w-[420px] snap-start relative cursor-pointer" onclick="openCaseDetail('case2')">
+  <div class="block group-hover/product:shadow-2xl relative overflow-hidden rounded-2xl bg-white/30 dark:bg-white/5 h-[300px]">
+    <div class="object-cover object-center absolute h-full w-full inset-0 bg-white dark:bg-gray-900 transition-all duration-300 z-[1]" style="opacity: 1;">
+      <div class="p-6 h-full flex items-center justify-center">
+        <div class="w-full max-w-sm bg-white rounded-xl p-6 shadow-lg">
+          <h3 class="text-lg font-semibold text-gray-800 mb-4 text-center">Survey Results: Yes vs No</h3>
+          <div class="bg-white rounded-lg border border-gray-200 p-4">
+            <table class="w-full text-sm">
+              <thead class="border-b border-gray-200">
+                <tr>
+                  <th class="text-left py-3 text-gray-600 font-medium">Response</th>
+                  <th class="text-right py-3 text-gray-600 font-medium">Percentage</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="border-b border-gray-100">
+                  <td class="py-3 text-gray-700">Yes</td>
+                  <td class="text-right py-3 font-semibold text-teal-600">81%</td>
+                </tr>
+                <tr>
+                  <td class="py-3 text-gray-700">No</td>
+                  <td class="text-right py-3 font-semibold text-coral-600">19%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+        
+    <div class="object-cover object-center absolute h-full w-full inset-0 transition-all duration-300 z-[2]" style="opacity: 0;">
+      <img src="assets/case2_final.png" alt="Final 3D Donut Chart" class="w-full h-full object-contain p-4">
+    </div>
+  </div>
+      
+      <div class="absolute top-4 left-4 z-[3]">
+        <div class="backdrop-blur-xl bg-gradient-to-br from-white/40 to-white/20 dark:from-black/40 dark:to-black/20 border border-white/30 dark:border-white/15 px-4 py-2 rounded-full transition-all"
+             style="box-shadow: rgba(0, 0, 0, 0.12) 0px 8px 32px 0px, rgba(0, 0, 0, 0.08) 0px 2px 8px 0px, rgba(255, 255, 255, 0.3) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.1) 0px -1px 0px 0px inset;">
+          <span class="text-white text-sm font-semibold drop-shadow-md">Click to View Process</span>
+        </div>
+      </div>
+    </div>
+
+<!-- 案例3: 付费社交广告预算展望 -->
+<div class="group/product min-w-[320px] md:min-w-[420px] snap-start relative cursor-pointer" onclick="openCaseDetail('case3')">
+  <div class="block group-hover/product:shadow-2xl relative overflow-hidden rounded-2xl bg-white/30 dark:bg-white/5 h-[300px]">
+    <div class="object-cover object-center absolute h-full w-full inset-0 bg-white dark:bg-gray-900 transition-all duration-300 z-[1]" style="opacity: 1;">
+      <div class="p-6 h-full flex items-center justify-center">
+        <div class="w-full max-w-sm bg-white rounded-xl p-6 shadow-lg">
+          <h3 class="text-lg font-semibold text-gray-800 mb-4 text-center">Advertiser Outlook for Paid Social Advertising Budgets</h3>
+          <div class="bg-white rounded-lg border border-gray-200 p-4">
+            <table class="w-full text-sm">
+              <thead class="border-b border-gray-200">
+                <tr>
+                  <th class="text-left py-3 text-gray-600 font-medium">Outlook</th>
+                  <th class="text-right py-3 text-gray-600 font-medium">Percentage</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="border-b border-gray-100">
+                  <td class="py-3 text-gray-700">Increase</td>
+                  <td class="text-right py-3 font-semibold text-blue-600">64%</td>
+                </tr>
+                <tr class="border-b border-gray-100">
+                  <td class="py-3 text-gray-700">Stay the Same</td>
+                  <td class="text-right py-3 font-semibold text-gray-600">34%</td>
+                </tr>
+                <tr>
+                  <td class="py-3 text-gray-700">Decrease</td>
+                  <td class="text-right py-3 font-semibold text-red-600">2%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+        
+    <div class="object-cover object-center absolute h-full w-full inset-0 transition-all duration-300 z-[2]" style="opacity: 0;">
+      <img src="assets/case3_final.png" alt="Final Advertiser Outlook Visualization" class="w-full h-full object-contain p-4">
+    </div>
+  </div>
+      
+      <div class="absolute top-4 left-4 z-[3]">
+        <div class="backdrop-blur-xl bg-gradient-to-br from-white/40 to-white/20 dark:from-black/40 dark:to-black/20 border border-white/30 dark:border-white/15 px-4 py-2 rounded-full transition-all"
+             style="box-shadow: rgba(0, 0, 0, 0.12) 0px 8px 32px 0px, rgba(0, 0, 0, 0.08) 0px 2px 8px 0px, rgba(255, 255, 255, 0.3) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.1) 0px -1px 0px 0px inset;">
+          <span class="text-white text-sm font-semibold drop-shadow-md">Click to View Process</span>
+        </div>
+      </div>
+      
+    </div>
+
+<!-- 案例4: 智能手机和AI助手使用 -->
+<div class="group/product min-w-[320px] md:min-w-[420px] snap-start relative cursor-pointer" onclick="openCaseDetail('case4')">
+  <div class="block group-hover/product:shadow-2xl relative overflow-hidden rounded-2xl bg-white/30 dark:bg-white/5 h-[300px]">
+    <div class="object-cover object-center absolute h-full w-full inset-0 bg-white dark:bg-gray-900 transition-all duration-300 z-[1]" style="opacity: 1;">
+      <div class="p-6 h-full flex items-center justify-center">
+        <div class="w-full max-w-sm bg-white rounded-xl p-6 shadow-lg">
+          <h3 class="text-lg font-semibold text-gray-800 mb-4 text-center">Smartphone & AI Usage Statistics</h3>
+          <div class="bg-white rounded-lg border border-gray-200 p-4">
+            <table class="w-full text-sm">
+              <thead class="border-b border-gray-200">
+                <tr>
+                  <th class="text-left py-3 text-gray-600 font-medium">Category</th>
+                  <th class="text-right py-3 text-gray-600 font-medium">Number</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="border-b border-gray-100">
+                  <td class="py-3 text-gray-700">Smartphone Users</td>
+                  <td class="text-right py-3 font-semibold text-blue-600">169M</td>
+                </tr>
+                <tr>
+                  <td class="py-3 text-gray-700">AI Assistant Users</td>
+                  <td class="text-right py-3 font-semibold text-green-600">72M</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+        
+    <div class="object-cover object-center absolute h-full w-full inset-0 transition-all duration-300 z-[2]" style="opacity: 0;">
+      <img src="assets/case4_final.png" alt="Final Smartphone & AI Usage Visualization" class="w-full h-full object-contain p-4">
+    </div>
+  </div>
+      
+      <div class="absolute top-4 left-4 z-[3]">
+        <div class="backdrop-blur-xl bg-gradient-to-br from-white/40 to-white/20 dark:from-black/40 dark:to-black/20 border border-white/30 dark:border-white/15 px-4 py-2 rounded-full transition-all"
+             style="box-shadow: rgba(0, 0, 0, 0.12) 0px 8px 32px 0px, rgba(0, 0, 0, 0.08) 0px 2px 8px 0px, rgba(255, 255, 255, 0.3) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.1) 0px -1px 0px 0px inset;">
+          <span class="text-white text-sm font-semibold drop-shadow-md">Click to View Process</span>
+        </div>
+      </div>
+      
+    </div>
+
+<!-- 案例5: 财务年度对比 -->
+<div class="group/product min-w-[320px] md:min-w-[420px] snap-start relative cursor-pointer" onclick="openCaseDetail('case5')">
+  <div class="block group-hover/product:shadow-2xl relative overflow-hidden rounded-2xl bg-white/30 dark:bg-white/5 h-[300px]">
+    <div class="object-cover object-center absolute h-full w-full inset-0 bg-white dark:bg-gray-900 transition-all duration-300 z-[1]" style="opacity: 1;">
+      <div class="p-6 h-full flex items-center justify-center">
+        <div class="w-full max-w-sm bg-white rounded-xl p-6 shadow-lg">
+          <h3 class="text-lg font-semibold text-gray-800 mb-4 text-center">Financial Year Comparison</h3>
+          <div class="bg-white rounded-lg border border-gray-200 p-4">
+            <table class="w-full text-sm">
+              <thead class="border-b border-gray-200">
+                <tr>
+                  <th class="text-left py-3 text-gray-600 font-medium">Financial Year</th>
+                  <th class="text-right py-3 text-gray-600 font-medium">Value</th>
+                  <th class="text-right py-3 text-gray-600 font-medium">% Change</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="border-b border-gray-100">
+                  <td class="py-3 text-gray-700">18/19</td>
+                  <td class="text-right py-3 font-semibold text-blue-600">247.5</td>
+                  <td class="text-right py-3 text-gray-700">-</td>
+                </tr>
+                <tr>
+                  <td class="py-3 text-gray-700">19/20</td>
+                  <td class="text-right py-3 font-semibold text-orange-600">211.5</td>
+                  <td class="text-right py-3 font-semibold text-red-600">-14.5%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+        
+    <!-- 悬停后: 显示assets/case5_final.png图片 -->
+    <div class="object-cover object-center absolute h-full w-full inset-0 transition-all duration-300 z-[2]" style="opacity: 0;">
+      <img src="assets/case5_final.png" alt="Final Financial Year Visualization" class="w-full h-full object-contain p-4">
+    </div>
+  </div>
+   
+      <div class="absolute top-4 left-4 z-[3]">
+        <div class="backdrop-blur-xl bg-gradient-to-br from-white/40 to-white/20 dark:from-black/40 dark:to-black/20 border border-white/30 dark:border-white/15 px-4 py-2 rounded-full transition-all"
+             style="box-shadow: rgba(0, 0, 0, 0.12) 0px 8px 32px 0px, rgba(0, 0, 0, 0.08) 0px 2px 8px 0px, rgba(255, 255, 255, 0.3) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.1) 0px -1px 0px 0px inset;">
+          <span class="text-white text-sm font-semibold drop-shadow-md">Click to View Process</span>
+        </div>
+      </div>
+    </div>
+
+<!-- 案例6: 社交媒体影响调查 -->
+<div class="group/product min-w-[320px] md:min-w-[420px] snap-start relative cursor-pointer" onclick="openCaseDetail('case6')">
+  <div class="block group-hover/product:shadow-2xl relative overflow-hidden rounded-2xl bg-white/30 dark:bg-white/5 h-[300px]">
+    <div class="object-cover object-center absolute h-full w-full inset-0 bg-white dark:bg-gray-900 transition-all duration-300 z-[1]" style="opacity: 1;">
+      <div class="p-6 h-full flex items-center justify-center">
+        <div class="w-full max-w-sm bg-white rounded-xl p-6 shadow-lg">
+          <h3 class="text-lg font-semibold text-gray-800 mb-4 text-center">Social Media Impact Survey</h3>
+          <div class="bg-white rounded-lg border border-gray-200 p-4">
+            <table class="w-full text-sm">
+              <thead class="border-b border-gray-200">
+                <tr>
+                  <th class="text-left py-3 text-gray-600 font-medium">Effect</th>
+                  <th class="text-right py-3 text-gray-600 font-medium">Number</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="border-b border-gray-100">
+                  <td class="py-3 text-gray-700">Limits attention span when completing assignments</td>
+                  <td class="text-right py-3 font-semibold text-pink-600">75</td>
+                </tr>
+                <tr class="border-b border-gray-100">
+                  <td class="py-3 text-gray-700">Makes me proud to realize I am known online</td>
+                  <td class="text-right py-3 font-semibold text-purple-600">25</td>
+                </tr>
+                <tr class="border-b border-gray-100">
+                  <td class="py-3 text-gray-700">I hide behind my social media</td>
+                  <td class="text-right py-3 font-semibold text-teal-600">10</td>
+                </tr>
+                <tr>
+                  <td class="py-3 text-gray-700">Decreases my mental health and creates toxicity</td>
+                  <td class="text-right py-3 font-semibold text-orange-600">35</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+        
+    <!-- 悬停后: 显示assets/case6_final.png图片 -->
+    <div class="object-cover object-center absolute h-full w-full inset-0 transition-all duration-300 z-[2]" style="opacity: 0;">
+      <img src="assets/case6_final.png" alt="Final Social Media Impact Visualization" class="w-full h-full object-contain p-4">
+    </div>
+  </div>
+      
+      <div class="absolute top-4 left-4 z-[3]">
+        <div class="backdrop-blur-xl bg-gradient-to-br from-white/40 to-white/20 dark:from-black/40 dark:to-black/20 border border-white/30 dark:border-white/15 px-4 py-2 rounded-full transition-all"
+             style="box-shadow: rgba(0, 0, 0, 0.12) 0px 8px 32px 0px, rgba(0, 0, 0, 0.08) 0px 2px 8px 0px, rgba(255, 255, 255, 0.3) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.1) 0px -1px 0px 0px inset;">
+          <span class="text-white text-sm font-semibold drop-shadow-md">Click to View Process</span>
+        </div>
+      </div>
+    </div>
+
+<!-- 案例7: 移动操作系统销售预测 -->
+<div class="group/product min-w-[320px] md:min-w-[420px] snap-start relative cursor-pointer" onclick="openCaseDetail('case7')">
+  <div class="block group-hover/product:shadow-2xl relative overflow-hidden rounded-2xl bg-white/30 dark:bg-white/5 h-[300px]">
+    <div class="object-cover object-center absolute h-full w-full inset-0 bg-white dark:bg-gray-900 transition-all duration-300 z-[1]" style="opacity: 1;">
+      <div class="p-6 h-full flex items-center justify-center">
+        <div class="w-full max-w-sm bg-white rounded-xl p-6 shadow-lg">
+          <h3 class="text-lg font-semibold text-gray-800 mb-4 text-center">Mobile OS Sales Forecast (Millions of Units)</h3>
+          <div class="bg-white rounded-lg border border-gray-200 p-4">
+            <table class="w-full text-xs">
+              <thead class="border-b border-gray-200">
+                <tr>
+                  <th class="text-left py-3 text-gray-600 font-medium">Year</th>
+                  <th class="text-right py-3 text-gray-600 font-medium">Symbian</th>
+                  <th class="text-right py-3 text-gray-600 font-medium">Android</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="border-b border-gray-100">
+                  <td class="py-2 text-gray-700">2009</td>
+                  <td class="text-right py-2 font-semibold text-blue-600">80</td>
+                  <td class="text-right py-2 font-semibold text-red-600">10</td>
+                </tr>
+                <tr class="border-b border-gray-100">
+                  <td class="py-2 text-gray-700">2010</td>
+                  <td class="text-right py-2 font-semibold text-blue-600">115</td>
+                  <td class="text-right py-2 font-semibold text-red-600">40</td>
+                </tr>
+                <tr>
+                  <td class="py-2 text-gray-700">2014</td>
+                  <td class="text-right py-2 font-semibold text-blue-600">260</td>
+                  <td class="text-right py-2 font-semibold text-red-600">250</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="text-xs text-gray-500 mt-2 text-center">(Data includes 2009-2014 sales for multiple OS)</div>
+          </div>
+        </div>
+      </div>
+    </div>
+        
+    <!-- 悬停后: 显示assets/case7_final.png图片 -->
+    <div class="object-cover object-center absolute h-full w-full inset-0 transition-all duration-300 z-[2]" style="opacity: 0;">
+      <img src="assets/case7_final.png" alt="Final Mobile OS Sales Chart" class="w-full h-full object-contain p-4">
+    </div>
+  </div>
+ 
+      <div class="absolute top-4 left-4 z-[3]">
+        <div class="backdrop-blur-xl bg-gradient-to-br from-white/40 to-white/20 dark:from-black/40 dark:to-black/20 border border-white/30 dark:border-white/15 px-4 py-2 rounded-full transition-all"
+             style="box-shadow: rgba(0, 0, 0, 0.12) 0px 8px 32px 0px, rgba(0, 0, 0, 0.08) 0px 2px 8px 0px, rgba(255, 255, 255, 0.3) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.1) 0px -1px 0px 0px inset;">
+          <span class="text-white text-sm font-semibold drop-shadow-md">Click to View Process</span>
+        </div>
+      </div>
+    </div>
+
+<!-- 案例8: 养老金分割 -->
+<div class="group/product min-w-[320px] md:min-w-[420px] snap-start relative cursor-pointer" onclick="openCaseDetail('case8')">
+  <div class="block group-hover/product:shadow-2xl relative overflow-hidden rounded-2xl bg-white/30 dark:bg-white/5 h-[300px]">
+    <div class="object-cover object-center absolute h-full w-full inset-0 bg-white dark:bg-gray-900 transition-all duration-300 z-[1]" style="opacity: 1;">
+      <div class="p-6 h-full flex items-center justify-center">
+        <div class="w-full max-w-sm bg-white rounded-xl p-6 shadow-lg">
+          <h3 class="text-lg font-semibold text-gray-800 mb-4 text-center">Breakdown of Pension Pot</h3>
+          <div class="bg-white rounded-lg border border-gray-200 p-4">
+            <table class="w-full text-sm">
+              <thead class="border-b border-gray-200">
+                <tr>
+                  <th class="text-left py-3 text-gray-600 font-medium">Category</th>
+                  <th class="text-right py-3 text-gray-600 font-medium">Amount</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="border-b border-gray-100">
+                  <td class="py-3 text-gray-700">Some of your tax-free cash</td>
+                  <td class="text-right py-3 font-semibold text-teal-600">£10,000</td>
+                </tr>
+                <tr class="border-b border-gray-100">
+                  <td class="py-3 text-gray-700">Equivalent sum to drawdown</td>
+                  <td class="text-right py-3 font-semibold text-blue-600">£30,000</td>
+                </tr>
+                <tr>
+                  <td class="py-3 text-gray-700">Remaining pension pot untouched</td>
+                  <td class="text-right py-3 font-semibold text-green-600">£60,000</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+        
+    <!-- 悬停后: 显示assets/case8_final.png图片 -->
+    <div class="object-cover object-center absolute h-full w-full inset-0 transition-all duration-300 z-[2]" style="opacity: 0;">
+      <img src="assets/case8_final.png" alt="Final Pension Distribution Chart" class="w-full h-full object-contain p-4">
+    </div>
+  </div>  
+      <div class="absolute top-4 left-4 z-[3]">
+        <div class="backdrop-blur-xl bg-gradient-to-br from-white/40 to-white/20 dark:from-black/40 dark:to-black/20 border border-white/30 dark:border-white/15 px-4 py-2 rounded-full transition-all"
+             style="box-shadow: rgba(0, 0, 0, 0.12) 0px 8px 32px 0px, rgba(0, 0, 0, 0.08) 0px 2px 8px 0px, rgba(255, 255, 255, 0.3) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.1) 0px -1px 0px 0px inset;">
+          <span class="text-white text-sm font-semibold drop-shadow-md">Click to View Process</span>
+        </div>
+      </div>
+    </div>
+
+<!-- 案例9: 漏洞严重性分布 -->
+<div class="group/product min-w-[320px] md:min-w-[420px] snap-start relative cursor-pointer" onclick="openCaseDetail('case9')">
+  <div class="block group-hover/product:shadow-2xl relative overflow-hidden rounded-2xl bg-white/30 dark:bg-white/5 h-[300px]">
+    <div class="object-cover object-center absolute h-full w-full inset-0 bg-white dark:bg-gray-900 transition-all duration-300 z-[1]" style="opacity: 1;">
+      <div class="p-6 h-full flex items-center justify-center">
+        <div class="w-full max-w-sm bg-white rounded-xl p-6 shadow-lg">
+          <h3 class="text-lg font-semibold text-gray-800 mb-4 text-center">Vulnerability Severity Distribution and Scores</h3>
+          <div class="bg-white rounded-lg border border-gray-200 p-4">
+            <table class="w-full text-sm">
+              <thead class="border-b border-gray-200">
+                <tr>
+                  <th class="text-left py-3 text-gray-600 font-medium">Score Category</th>
+                  <th class="text-right py-3 text-gray-600 font-medium">Percentage</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="border-b border-gray-100">
+                  <td class="py-3 text-gray-700">Scores of 9 or higher</td>
+                  <td class="text-right py-3 font-semibold text-red-600">28%</td>
+                </tr>
+                <tr>
+                  <td class="py-3 text-gray-700">Scores of 7 or higher</td>
+                  <td class="text-right py-3 font-semibold text-red-600">84%</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="mt-4 pt-4 border-t border-gray-200">
+              <div class="text-sm font-medium text-gray-600 mb-2">Severity Distribution:</div>
+              <table class="w-full text-xs">
+                <tbody>
+                  <tr>
+                    <td class="py-1 text-red-600">CRITICAL</td>
+                    <td class="text-right py-1 font-medium">5.1%</td>
+                  </tr>
+                  <tr>
+                    <td class="py-1 text-orange-600">HIGH</td>
+                    <td class="text-right py-1 font-medium">65.3%</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+        
+     <!-- 悬停后: 显示assets/case9_final.png图片 -->
+    <div class="object-cover object-center absolute h-full w-full inset-0 transition-all duration-300 z-[2]" style="opacity: 0;">
+      <img src="assets/case9_final.png" alt="Final Vulnerability Dashboard" class="w-full h-full object-contain p-4">
+    </div>
+  </div>
+
+      <div class="absolute top-4 left-4 z-[3]">
+        <div class="backdrop-blur-xl bg-gradient-to-br from-white/40 to-white/20 dark:from-black/40 dark:to-black/20 border border-white/30 dark:border-white/15 px-4 py-2 rounded-full transition-all"
+             style="box-shadow: rgba(0, 0, 0, 0.12) 0px 8px 32px 0px, rgba(0, 0, 0, 0.08) 0px 2px 8px 0px, rgba(255, 255, 255, 0.3) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.1) 0px -1px 0px 0px inset;">
+          <span class="text-white text-sm font-semibold drop-shadow-md">Click to View Process</span>
+        </div>
+      </div>
+    </div>
+
+<!-- 案例10: 公众对科学进展的优先级 -->
+<div class="group/product min-w-[320px] md:min-w-[420px] snap-start relative cursor-pointer" onclick="openCaseDetail('case10')">
+  <div class="block group-hover/product:shadow-2xl relative overflow-hidden rounded-2xl bg-white/30 dark:bg-white/5 h-[300px]">
+    <div class="object-cover object-center absolute h-full w-full inset-0 bg-white dark:bg-gray-900 transition-all duration-300 z-[1]" style="opacity: 1;">
+      <div class="p-6 h-full flex items-center justify-center">
+        <div class="w-full max-w-sm bg-white rounded-xl p-6 shadow-lg">
+          <h3 class="text-lg font-semibold text-gray-800 mb-4 text-center">Public Priorities for Scientific Advancements</h3>
+          <div class="bg-white rounded-lg border border-gray-200 p-4">
+            <table class="w-full text-sm">
+              <thead class="border-b border-gray-200">
+                <tr>
+                  <th class="text-left py-3 text-gray-600 font-medium">Priority</th>
+                  <th class="text-right py-3 text-gray-600 font-medium">Support</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="border-b border-gray-100">
+                  <td class="py-2 text-gray-700">Finding cures for diseases</td>
+                  <td class="text-right py-2 font-semibold text-green-600">79%</td>
+                </tr>
+                <tr class="border-b border-gray-100">
+                  <td class="py-2 text-gray-700">Reducing poverty and hunger</td>
+                  <td class="text-right py-2 font-semibold text-blue-600">61%</td>
+                </tr>
+                <tr class="border-b border-gray-100">
+                  <td class="py-2 text-gray-700">Improving education</td>
+                  <td class="text-right py-2 font-semibold text-teal-600">56%</td>
+                </tr>
+                <tr>
+                  <td class="py-2 text-gray-700">Developing clean energy</td>
+                  <td class="text-right py-2 font-semibold text-cyan-600">55%</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="text-xs text-gray-500 mt-2 text-center">(Survey includes 11 categories total)</div>
+          </div>
+        </div>
+      </div>
+    </div>
+        
+    <!-- 悬停后: 显示assets/case10_final.png图片 -->
+    <div class="object-cover object-center absolute h-full w-full inset-0 transition-all duration-300 z-[2]" style="opacity: 0;">
+      <img src="assets/case10_final.png" alt="Final Scientific Priorities Visualization" class="w-full h-full object-contain p-4">
+    </div>
+  </div>
+      
+      <div class="absolute top-4 left-4 z-[3]">
+        <div class="backdrop-blur-xl bg-gradient-to-br from-white/40 to-white/20 dark:from-black/40 dark:to-black/20 border border-white/30 dark:border-white/15 px-4 py-2 rounded-full transition-all"
+             style="box-shadow: rgba(0, 0, 0, 0.12) 0px 8px 32px 0px, rgba(0, 0, 0, 0.08) 0px 2px 8px 0px, rgba(255, 255, 255, 0.3) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.1) 0px -1px 0px 0px inset;">
+          <span class="text-white text-sm font-semibold drop-shadow-md">Click to View Process</span>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+
+
+<!-- 对话框模板 - 案例1 -->
+<!-- 案例1: 广告效果数据可视化 -->
+<template id="dialogTemplate-case1">
+  <div role="dialog" id="dialog-modal" aria-labelledby="dialog-title" data-state="open" 
+       class="fixed left-[50%] top-[50%] z-[100] w-[90vw] max-w-6xl h-[95vh] translate-x-[-50%] translate-y-[-50%] rounded-3xl overflow-hidden flex flex-col data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 backdrop-blur-2xl bg-white/80 dark:bg-gray-900/80 border border-white/20 dark:border-white/10"
+       style="box-shadow: rgba(0, 0, 0, 0.3) 0px 20px 60px 0px, rgba(0, 0, 0, 0.2) 0px 8px 24px 0px, rgba(255, 255, 255, 0.4) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.15) 0px -1px 0px 0px inset; pointer-events: auto;"
+       tabindex="-1">
+    
+    <div class="flex items-center justify-between p-6 border-b border-gray-200 dark:border-gray-700">
+      <h2 id="dialog-title" class="text-2xl font-bold text-gray-900 dark:text-white">Case 1: Advertising Effectiveness by Medium</h2>
+      <button class="rounded-full p-2 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors" aria-label="Close" type="button" onclick="closeDetail()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x w-6 h-6 text-gray-500 dark:text-gray-400">
+          <path d="M18 6 6 18"></path>
+          <path d="m6 6 12 12"></path>
+        </svg>
+      </button>
+    </div>
+    
+  <div class="flex-1 overflow-y-auto p-6 bg-gray-50 dark:bg-gray-950">
+    <div class="mx-auto max-w-5xl space-y-12">
+      
+      <!-- Original Data - 修改为白底表格 -->
+      <div class="space-y-4">
+        <div class="flex items-center gap-3">
+          <div class="w-8 h-8 rounded-full bg-gray-100 dark:bg-gray-800 flex items-center justify-center">
+            <span class="text-gray-600 dark:text-gray-300 font-bold">📊</span>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Original Data</h3>
+        </div>
+        
+        <div class="bg-white rounded-2xl p-8 border border-gray-200">
+          <h4 class="font-semibold text-gray-700 mb-6 text-center">Advertising Effectiveness by Medium</h4>
+          <div class="bg-white rounded-lg border border-gray-200 p-6">
+            <table class="w-full text-sm">
+              <thead class="border-b border-gray-200">
+                <tr>
+                  <th class="text-left py-3 text-gray-600 font-medium">Medium</th>
+                  <th class="text-right py-3 text-gray-600 font-medium">Percentage</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="border-b border-gray-100">
+                  <td class="py-4 text-gray-700">Magazine/Newspaper</td>
+                  <td class="text-right py-4 font-semibold text-blue-600">35%</td>
+                </tr>
+                <tr>
+                  <td class="py-4 text-gray-700">Billboard</td>
+                  <td class="text-right py-4 font-semibold text-orange-600">13%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+        
+<!-- Step 1: Rewriting --> <div class="space-y-4"> <div class="flex items-center gap-3"> <div class="w-8 h-8 rounded-full bg-purple-100 dark:bg-purple-900 flex items-center justify-center"> <span class="text-purple-600 dark:text-purple-300 font-bold">1</span> </div> <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Rewriting - Enhanced Prompt</h3> </div> <div class="backdrop-blur-2xl bg-gradient-to-br from-white/40 to-white/20 dark:from-black/40 dark:to-black/20 rounded-2xl p-6 border border-white/30 dark:border-white/15"> <div class="text-xs font-semibold text-purple-600 dark:text-purple-400 mb-3 drop-shadow-md">🚀 ENHANCED AI PROMPT</div> <p class="text-sm leading-relaxed text-gray-800 dark:text-gray-200"> A stunning 3D infographic visualizing "Advertising Effectiveness by Medium," presented in a clean, minimalist, and professional corporate style. The composition is balanced on a light grey studio background with soft, diffused lighting. </p> <p class="text-sm leading-relaxed text-gray-800 dark:text-gray-200 mt-3"> <strong>On the left side:</strong> A stylized, isometric 3D model of a stack of modern magazines next to a neatly folded newspaper. Emanating upwards from these publications is a thick, vibrant, glowing bar of bright blue light, representing high effectiveness. The bar reaches a significant height. Clearly legible, bold white text floats next to it, reading "<strong>Magazine/Newspaper</strong>" with the large number "<strong>35%</strong>" prominently displayed. </p> <p class="text-sm leading-relaxed text-gray-800 dark:text-gray-200 mt-3"> <strong>On the right side:</strong> A sleek, miniature 3D model of a modern billboard. Emanating upwards from the billboard is a much shorter and thinner glowing bar of muted orange light. This bar is visually about one-third the height of the blue bar, accurately representing its lower effectiveness. Adjacent to this bar is clear, bold white text reading "<strong>Billboard</strong>" and the number "<strong>13%</strong>". </p> <p class="text-sm leading-relaxed text-gray-800 dark:text-gray-200 mt-3"> <strong>Overall Style:</strong> The aesthetic is clean and sophisticated, with a focus on data clarity. The glowing bars have a subtle emissive quality, casting a soft light on the objects below. The entire scene is rendered with extreme detail and realism. </p> <p class="text-sm italic text-gray-500 dark:text-gray-400 mt-3"> Keywords: 3D render, data visualization, infographic, isometric perspective, minimalist, professional, corporate branding, octane render, trending on Behance, studio lighting, soft shadows, high detail, 4K, clean design, legible typography. </p> </div> </div> <!-- Step 2: Generation --> <div class="space-y-4"> <div class="flex items-center gap-3"> <div class="w-8 h-8 rounded-full bg-blue-100 dark:bg-blue-900 flex items-center justify-center"> <span class="text-blue-600 dark:text-blue-300 font-bold">2</span> </div> <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Generation - Initial Design</h3> </div> <div class="bg-white dark:bg-gray-800 rounded-2xl p-8 border-2 border-blue-200 dark:border-blue-900"> <div class="text-center"> <h4 class="text-lg font-semibold text-gray-800 dark:text-white mb-6">Initial 3D Visualization</h4> <img src="assets/case1_initial.png" alt="Initial 3D Visualization" class="w-full max-w-lg mx-auto rounded-lg shadow-md"> <p class="text-sm text-gray-600 dark:text-gray-300 mt-4"> Initial generation shows correct layout and colors, but bar heights are not proportionally accurate (expected ratio: 35% vs 13% ≈ 2.69:1) </p> </div> </div> </div> <!-- Step 3: Reflection --> <div class="space-y-4"> <div class="flex items-center gap-3"> <div class="w-8 h-8 rounded-full bg-orange-100 dark:bg-orange-900 flex items-center justify-center"> <span class="text-orange-600 dark:text-orange-300 font-bold">3</span> </div> <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Reflection - Problem Analysis</h3> </div> <div class="backdrop-blur-2xl bg-gradient-to-br from-white/40 to-white/20 dark:from-black/40 dark:to-black/20 rounded-2xl p-6 border border-white/30 dark:border-white/15"> <div class="text-xs font-semibold text-red-600 dark:text-red-400 mb-3 drop-shadow-md">🔍 ISSUE DETECTED</div> <p class="text-sm leading-relaxed text-gray-800 dark:text-gray-200"> The MLLM auditor detects a geometric inconsistency: </p> <p class="text-sm leading-relaxed text-gray-800 dark:text-gray-200 mt-2"> <strong>Issue:</strong> The blue bar for "Magazine/Newspaper" (35%) and orange bar for "Billboard" (13%) do not reflect the correct proportional relationship. </p> <div class="mt-4 bg-red-50 dark:bg-red-900/20 p-4 rounded-lg"> <div class="text-sm font-medium text-red-700 dark:text-red-300"> 🔢 Required ratio: 35 ÷ 13 ≈ <strong>2.69:1</strong> </div> <p class="text-xs text-red-600 dark:text-red-400 mt-1"> Current visual ratio appears closer to 3.5:1 → overstates magazine effectiveness. </p> </div> <p class="text-sm mt-3 text-gray-800 dark:text-gray-200"> <strong>Instruction:</strong> Adjust the height of the Magazine/Newspaper blue bar so that it is proportionally accurate to the Billboard orange bar based on their labeled percentages (35% vs 13%), resulting in a height ratio of approximately 2.69:1. Ensure both bars retain their current colors, positions, and labels, but correct the geometric scaling to match the data. </p> </div> </div> <!-- Step 4: Refinement Round 1 --> <div class="space-y-4"> <div class="flex items-center gap-3"> <div class="w-8 h-8 rounded-full bg-teal-100 dark:bg-teal-900 flex items-center justify-center"> <span class="text-teal-600 dark:text-teal-300 font-bold">4</span> </div> <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Refinement - Round 1</h3> </div> <div class="bg-gradient-to-r from-sky-50 to-teal-50 dark:from-sky-900/20 dark:to-teal-900/20 rounded-2xl p-8 border-2 border-sky-200 dark:border-sky-900"> <div class="text-center"> <h4 class="text-lg font-semibold text-gray-800 dark:text-white mb-6">First Refinement Result</h4> <img src="assets/case1_middle1.png" alt="After First Refinement" class="w-full max-w-lg mx-auto rounded-lg shadow-lg border border-sky-200"> <div class="mt-6 p-4 bg-white/60 dark:bg-gray-800/60 rounded-lg"> <div class="text-sm font-medium text-sky-700 dark:text-sky-300 mb-2">🔧 Applied Fix</div> <ul class="text-xs text-gray-600 dark:text-gray-300 space-y-1"> <li>• Height ratio corrected to ≈2.69:1 using linear scaling</li> <li>• Glow effect and lighting preserved</li> <li>• Text labels remain sharp and correctly positioned</li> <li>• 3D isometric alignment maintained</li> </ul> </div> </div> </div> </div> <!-- Step 5: Final Verification & Completion --> <div class="space-y-4"> <div class="flex items-center gap-3"> <div class="w-8 h-8 rounded-full bg-emerald-100 dark:bg-emerald-900 flex items-center justify-center"> <span class="text-emerald-600 dark:text-emerald-300 font-bold">5</span> </div> <h3 class="text-xl font-semibold text-gray-900 dark:text-white">✅ Final Output - Verified</h3> </div> <div class="bg-gradient-to-r from-emerald-50 to-green-50 dark:from-emerald-900/20 dark:to-green-900/20 rounded-2xl p-8 border-2 border-emerald-200 dark:border-emerald-900"> <div class="text-center"> <h4 class="text-lg font-semibold text-gray-800 dark:text-white mb-6">Final Verified Visualization</h4> <img src="assets/case1_final.png" alt="Final Verified Visualization" class="w-full max-w-lg mx-auto rounded-lg shadow-xl"> <div class="mt-6 p-4 bg-white/70 dark:bg-gray-800/70 rounded-lg border border-emerald-100 dark:border-emerald-900"> <div class="text-sm font-medium text-emerald-700 dark:text-emerald-300 mb-2">✅ Self-Correction Complete</div> <p class="text-sm text-gray-700 dark:text-gray-300"> The reflection module re-checks the refined image and confirms: </p> <ul class="text-xs text-gray-600 dark:text-gray-300 mt-2 space-y-1"> <li>• All data points match the source table</li> <li>• Proportional relationship validated (35% : 13% ≈ 2.69:1)</li> <li>• No rendering errors found</li> <li>• Aesthetic quality preserved</li> </ul> <div class="text-xs font-semibold text-emerald-600 dark:text-emerald-400 mt-3"> ✅ <strong>Result approved. No further refinement needed.</strong> </div> </div> </div> </div> </div> </div> </div> </template>
+
+
+<!-- 案例2: 调查结果可视化 -->
+<template id="dialogTemplate-case2">
+  <div role="dialog" id="dialog-modal" aria-labelledby="dialog-title" data-state="open" 
+       class="fixed left-[50%] top-[50%] z-[100] w-[90vw] max-w-6xl h-[95vh] translate-x-[-50%] translate-y-[-50%] rounded-3xl overflow-hidden flex flex-col data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 backdrop-blur-2xl bg-white/80 dark:bg-gray-900/80 border border-white/20 dark:border-white/10"
+       style="box-shadow: rgba(0, 0, 0, 0.3) 0px 20px 60px 0px, rgba(0, 0, 0, 0.2) 0px 8px 24px 0px, rgba(255, 255, 255, 0.4) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.15) 0px -1px 0px 0px inset; pointer-events: auto;"
+       tabindex="-1">
+    
+    <div class="flex items-center justify-between p-6 border-b border-gray-200 dark:border-gray-700">
+      <h2 id="dialog-title" class="text-2xl font-bold text-gray-900 dark:text-white">Case 2: Survey Results: Yes vs No Responses</h2>
+      <button class="rounded-full p-2 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors" aria-label="Close" type="button" onclick="closeDetail()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x w-6 h-6 text-gray-500 dark:text-gray-400">
+          <path d="M18 6 6 18"></path>
+          <path d="m6 6 12 12"></path>
+        </svg>
+      </button>
+    </div>
+  <div class="flex-1 overflow-y-auto p-6 bg-gray-50 dark:bg-gray-950">
+    <div class="mx-auto max-w-5xl space-y-12">
+      
+      <!-- Original Data - 修改为白底表格 -->
+      <div class="space-y-4">
+        <div class="flex items-center gap-3">
+          <div class="w-8 h-8 rounded-full bg-gray-100 dark:bg-gray-800 flex items-center justify-center">
+            <span class="text-gray-600 dark:text-gray-300 font-bold">📊</span>
+          </div>
+          <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Original Data</h3>
+        </div>
+        
+        <div class="bg-white rounded-2xl p-8 border border-gray-200">
+          <h4 class="font-semibold text-gray-700 mb-6 text-center">Survey Results: Yes vs No Responses</h4>
+          <div class="bg-white rounded-lg border border-gray-200 p-6">
+            <table class="w-full text-sm">
+              <thead class="border-b border-gray-200">
+                <tr>
+                  <th class="text-left py-3 text-gray-600 font-medium">Response</th>
+                  <th class="text-right py-3 text-gray-600 font-medium">Percentage</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="border-b border-gray-100">
+                  <td class="py-4 text-gray-700">Yes</td>
+                  <td class="text-right py-4 font-semibold text-teal-600">81%</td>
+                </tr>
+                <tr>
+                  <td class="py-4 text-gray-700">No</td>
+                  <td class="text-right py-4 font-semibold text-coral-600">19%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+        
+<!-- Step 1: Rewriting --> <div class="space-y-4"> <div class="flex items-center gap-3"> <div class="w-8 h-8 rounded-full bg-purple-100 dark:bg-purple-900 flex items-center justify-center"> <span class="text-purple-600 dark:text-purple-300 font-bold">1</span> </div> <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Rewriting - Enhanced Prompt</h3> </div> <div class="backdrop-blur-2xl bg-gradient-to-br from-white/40 to-white/20 dark:from-black/40 dark:to-black/20 rounded-2xl p-6 border border-white/30 dark:border-white/15"> <div class="text-xs font-semibold text-purple-600 dark:text-purple-400 mb-3 drop-shadow-md">🚀 ENHANCED AI PROMPT</div> <p class="text-sm leading-relaxed text-gray-800 dark:text-gray-200"> A professional, ultra-detailed infographic visualizing survey results. The centerpiece is a sleek, 3D isometric donut chart, presented on a clean, dark charcoal background with a subtle gradient. </p> <p class="text-sm leading-relaxed text-gray-800 dark:text-gray-200 mt-3"> The chart is clearly divided into two segments: <ul class="list-disc list-inside mt-1 space-y-1"> <li><strong>81% segment:</strong> rendered in vibrant, optimistic <strong>teal green</strong></li> <li><strong>19% segment:</strong> rendered in soft <strong>coral red</strong></li> </ul> </p> <p class="text-sm leading-relaxed text-gray-800 dark:text-gray-200 mt-3"> Elegant, bold white sans-serif typography displays percentages "81%" and "19%" directly on or beside each segment. </p> <p class="text-sm leading-relaxed text-gray-800 dark:text-gray-200 mt-3"> Surrounding icons: <ul class="list-disc list-inside mt-1 space-y-1"> <li>Dense cluster of glowing green checkmarks near the 81% slice</li> <li>Few sparse red 'X' marks near the 19% slice</li> </ul> </p> <p class="text-sm leading-relaxed text-gray-800 dark:text-gray-200 mt-3 italic"> Style: data visualization, corporate presentation, Behance HD, 4K, sharp focus, high contrast, modern UI design, soft studio lighting, realistic shadows. </p> </div> </div> <!-- Step 2: Generation --> <div class="space-y-4"> <div class="flex items-center gap-3"> <div class="w-8 h-8 rounded-full bg-blue-100 dark:bg-blue-900 flex items-center justify-center"> <span class="text-blue-600 dark:text-blue-300 font-bold">2</span> </div> <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Generation - Initial Design</h3> </div> <div class="bg-gray-900 rounded-2xl p-8 border-2 border-blue-900/50"> <div class="text-center"> <h4 class="text-lg font-semibold text-white mb-6">Initial 3D Donut Chart</h4> <img src="assets/case2_initial.png" alt="Initial 3D Donut Chart" class="w-full max-w-lg mx-auto rounded-lg shadow-md"> <p class="text-sm text-gray-300 mt-4"> Initial generation shows incorrect segment proportions — green slice appears larger than 81%, red too small </p> </div> </div> </div> <!-- Step 3: Reflection Round 1 --> <div class="space-y-4"> <div class="flex items-center gap-3"> <div class="w-8 h-8 rounded-full bg-orange-100 dark:bg-orange-900 flex items-center justify-center"> <span class="text-orange-600 dark:text-orange-300 font-bold">3</span> </div> <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Reflection - Round 1</h3> </div> <div class="backdrop-blur-2xl bg-gradient-to-br from-white/40 to-white/20 dark:from-black/40 dark:to-black/20 rounded-2xl p-6 border border-white/30 dark:border-white/15"> <div class="text-xs font-semibold text-red-600 dark:text-red-400 mb-3 drop-shadow-md">🔍 ISSUE DETECTED</div> <p class="text-sm leading-relaxed text-gray-800 dark:text-gray-200"> The generated donut chart does not reflect the correct proportions: </p> <div class="mt-4 bg-red-50 dark:bg-red-900/20 p-4 rounded-lg"> <div class="text-sm font-medium text-red-700 dark:text-red-300"> 🔢 Expected Angles: <ul class="mt-1 space-y-1"> <li>• Yes (81%) → <strong>291.6°</strong></li> <li>• No (19%) → <strong>68.4°</strong></li> </ul> </div> <p class="text-xs text-red-600 dark:text-red-400 mt-2"> Visual estimate suggests green slice exceeds 300° — significant overstatement of positive response. </p> </div> <p class="text-sm mt-3 text-gray-800 dark:text-gray-200"> <strong>Instruction:</strong> Adjust the donut chart so that the green 'Yes' slice occupies exactly 81% of the circle (291.6°) and the red 'No' slice occupies exactly 19% (68.4°). Reposition slice boundaries accordingly while preserving colors, labels, and 3D style. </p> </div> </div> <!-- Step 4: Refinement Round 1 --> <div class="space-y-4"> <div class="flex items-center gap-3"> <div class="w-8 h-8 rounded-full bg-teal-100 dark:bg-teal-900 flex items-center justify-center"> <span class="text-teal-600 dark:text-teal-300 font-bold">4</span> </div> <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Refinement - Round 1</h3> </div> <div class="bg-gradient-to-br from-sky-50 to-teal-50 dark:from-sky-900/20 dark:to-teal-900/20 rounded-2xl p-8 border-2 border-sky-200 dark:border-sky-900"> <div class="text-center"> <h4 class="text-lg font-semibold text-gray-800 dark:text-white mb-6">After First Refinement</h4> <img src="assets/case2_middle1.png" alt="After First Refinement" class="w-full max-w-lg mx-auto rounded-lg shadow-lg border border-sky-200"> <div class="mt-6 p-4 bg-white/60 dark:bg-gray-800/60 rounded-lg"> <div class="text-sm font-medium text-sky-700 dark:text-sky-300 mb-2">🔧 Applied Fix</div> <ul class="text-xs text-gray-600 dark:text-gray-300 space-y-1"> <li>• Green slice reduced to ≈292°</li> <li>• Red slice expanded to ≈68°</li> <li>• Segment boundary repositioned accurately</li> <li>• Labels and icons preserved</li> </ul> </div> </div> </div> </div> <!-- Step 5: Reflection Round 2 --> <div class="space-y-4"> <div class="flex items-center gap-3"> <div class="w-8 h-8 rounded-full bg-orange-100 dark:bg-orange-900 flex items-center justify-center"> <span class="text-orange-600 dark:text-orange-300 font-bold">5</span> </div> <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Reflection - Round 2</h3> </div> <div class="backdrop-blur-2xl bg-gradient-to-br from-white/40 to-white/20 dark:from-black/40 dark:to-black/20 rounded-2xl p-6 border border-white/30 dark:border-white/15"> <div class="text-xs font-semibold text-yellow-600 dark:text-yellow-400 mb-3 drop-shadow-md">⚠️ RESIDUAL ISSUE</div> <p class="text-sm leading-relaxed text-gray-800 dark:text-gray-200"> Minor misalignment remains in angular precision: </p> <div class="mt-4 bg-yellow-50 dark:bg-yellow-900/20 p-4 rounded-lg"> <div class="text-sm font-medium text-yellow-700 dark:text-yellow-300"> 🔍 Current slice angles visually estimated at: <ul class="mt-1 space-y-1"> <li>• Yes: ~295°</li> <li>• No: ~65°</li> </ul> Still slightly off target (291.6° / 68.4°) </div> </div> <p class="text-sm mt-3 text-gray-800 dark:text-gray-200"> <strong>Instruction:</strong> Adjust the donut chart so that the red 'No' segment occupies exactly 19% of the circle (about 68°) and the green 'Yes' segment fills the remaining 81% (about 292°). Keep the existing colors, labels, and 3D style consistent. </p> </div> </div> <!-- Step 6: Refinement Round 2 --> <div class="space-y-4"> <div class="flex items-center gap-3"> <div class="w-8 h-8 rounded-full bg-emerald-100 dark:bg-emerald-900 flex items-center justify-center"> <span class="text-emerald-600 dark:text-emerald-300 font-bold">6</span> </div> <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Refinement - Round 2</h3> </div> <div class="bg-gradient-to-br from-emerald-50 to-green-50 dark:from-emerald-900/20 dark:to-green-900/20 rounded-2xl p-8 border-2 border-emerald-200 dark:border-emerald-900"> <div class="text-center"> <h4 class="text-lg font-semibold text-gray-800 dark:text-white mb-6">After Second Refinement</h4> <img src="assets/case2_middle2.png" alt="After Second Refinement" class="w-full max-w-lg mx-auto rounded-lg shadow-xl border border-emerald-200"> <div class="mt-6 p-4 bg-white/70 dark:bg-gray-800/70 rounded-lg"> <div class="text-sm font-medium text-emerald-700 dark:text-emerald-300 mb-2">✅ Precision Tuning Applied</div> <ul class="text-xs text-gray-600 dark:text-gray-300 space-y-1"> <li>• Final angle correction applied: 81% = 291.6°, 19% = 68.4°</li> <li>• Boundary now mathematically precise</li> <li>• Gloss and lighting effects enhanced</li> <li>• Icon clusters remain contextually accurate</li> </ul> </div> </div> </div> </div> <!-- Step 7: Final Output --> <div class="space-y-4"> <div class="flex items-center gap-3"> <div class="w-8 h-8 rounded-full bg-green-100 dark:bg-green-900 flex items-center justify-center"> <span class="text-green-600 dark:text-green-300 font-bold">7</span> </div> <h3 class="text-xl font-semibold text-gray-900 dark:text-white">✅ Final Verified Output</h3> </div> <div class="bg-gradient-to-r from-green-50 to-emerald-50 dark:from-green-900/20 dark:to-emerald-900/20 rounded-2xl p-8 border-2 border-green-200 dark:border-green-900"> <div class="text-center"> <h4 class="text-lg font-semibold text-gray-800 dark:text-white mb-6">Final Verified Donut Chart</h4> <img src="assets/case2_final.png" alt="Final Verified Donut Chart" class="w-full max-w-lg mx-auto rounded-lg shadow-2xl"> <div class="mt-6 p-4 bg-white/80 dark:bg-gray-800/80 rounded-lg border border-green-100 dark:border-green-900"> <div class="text-sm font-medium text-green-700 dark:text-green-300 mb-2">🎯 Self-Correction Complete</div> <p class="text-sm text-gray-700 dark:text-gray-300"> The reflection module re-analyzes the chart: </p> <ul class="text-xs text-gray-600 dark:text-gray-300 mt-2 space-y-1"> <li>• Segment angles verified: 81% (291.6°), 19% (68.4°)</li> <li>• Labels clear and correctly positioned</li> <li>• Icon semantics preserved</li> <li>• No visual artifacts detected</li> </ul> <div class="text-xs font-semibold text-green-600 dark:text-green-400 mt-3"> ✅ <strong>Output approved. Process terminated.</strong> </div> </div> </div> </div> </div> </div> </div> </div> </template>
+
+
+<!-- 案例3: 付费社交广告预算展望 -->
+<template id="dialogTemplate-case3">
+  <div role="dialog" id="dialog-modal" aria-labelledby="dialog-title" data-state="open" 
+       class="fixed left-[50%] top-[50%] z-[100] w-[90vw] max-w-6xl h-[95vh] translate-x-[-50%] translate-y-[-50%] rounded-3xl overflow-hidden flex flex-col data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 backdrop-blur-2xl bg-white/80 dark:bg-gray-900/80 border border-white/20 dark:border-white/10"
+       style="box-shadow: rgba(0, 0, 0, 0.3) 0px 20px 60px 0px, rgba(0, 0, 0, 0.2) 0px 8px 24px 0px, rgba(255, 255, 255, 0.4) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.15) 0px -1px 0px 0px inset; pointer-events: auto;"
+       tabindex="-1">
+    
+    <div class="flex items-center justify-between p-6 border-b border-gray-200 dark:border-gray-700">
+      <h2 id="dialog-title" class="text-2xl font-bold text-gray-900 dark:text-white">Case 3: Advertiser Outlook and Growth in Paid Social Advertising Budgets</h2>
+      <button class="rounded-full p-2 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors" aria-label="Close" type="button" onclick="closeDetail()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x w-6 h-6 text-gray-500 dark:text-gray-400">
+          <path d="M18 6 6 18"></path>
+          <path d="m6 6 12 12"></path>
+        </svg>
+      </button>
+    </div>
+    
+    <div class="flex-1 overflow-y-auto p-6 bg-gray-50 dark:bg-gray-950">
+      <div class="mx-auto max-w-5xl space-y-12">
+        
+        <!-- Original Data -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-gray-100 dark:bg-gray-800 flex items-center justify-center">
+              <span class="text-gray-600 dark:text-gray-300 font-bold">📊</span>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Original Data</h3>
+          </div>
+          
+          <div class="bg-white rounded-2xl p-8 border border-gray-200">
+            <h4 class="font-semibold text-gray-700 mb-6 text-center">Advertiser Outlook for Paid Social Advertising Budgets</h4>
+            <div class="bg-white rounded-lg border border-gray-200 p-6">
+              <table class="w-full text-sm">
+                <thead class="border-b border-gray-200">
+                  <tr>
+                    <th class="text-left py-3 text-gray-600 font-medium">Outlook</th>
+                    <th class="text-right py-3 text-gray-600 font-medium">Percentage</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="border-b border-gray-100">
+                    <td class="py-4 text-gray-700">Increase</td>
+                    <td class="text-right py-4 font-semibold text-blue-600">64%</td>
+                  </tr>
+                  <tr class="border-b border-gray-100">
+                    <td class="py-4 text-gray-700">Stay the Same</td>
+                    <td class="text-right py-4 font-semibold text-gray-600">34%</td>
+                  </tr>
+                  <tr>
+                    <td class="py-4 text-gray-700">Decrease</td>
+                    <td class="text-right py-4 font-semibold text-red-600">2%</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Step 1: Rewriting -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-purple-100 dark:bg-purple-900 flex items-center justify-center">
+              <span class="text-purple-600 dark:text-purple-300 font-bold">1</span>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Rewriting - Enhanced Prompt</h3>
+          </div>
+          
+          <div class="backdrop-blur-2xl bg-gradient-to-br from-white/40 to-white/20 dark:from-black/40 dark:to-black/20 rounded-2xl p-6 border border-white/30 dark:border-white/15">
+            <div class="text-xs font-semibold text-purple-600 dark:text-purple-400 mb-3 drop-shadow-md">🚀 ENHANCED AI PROMPT</div>
+            <p class="text-sm leading-relaxed text-gray-800 dark:text-gray-200">
+              A professional and visually engaging infographic titled "Advertiser Outlook: Paid Social Advertising Budgets". The design is clean, modern, minimalist, with a two-part layout on a light gray background.
+            </p>
+            <p class="text-sm leading-relaxed text-gray-800 dark:text-gray-200 mt-3">
+              <strong>Left side – "Advertiser Outlook":</strong>
+              A large donut chart shows sentiment:
+              <ul class="list-disc list-inside mt-1 space-y-1">
+                <li><strong>64% Increase:</strong> vibrant teal slice</li>
+                <li><strong>34% Stay the Same:</strong> medium blue slice</li>
+                <li><strong>2% Decrease:</strong> neutral dark gray sliver</li>
+              </ul>
+              Center label: <strong>"64%"</strong> in bold font.
+            </p>
+            <p class="text-sm leading-relaxed text-gray-800 dark:text-gray-200 mt-3">
+              <strong>Right side – "Paid Social Ad Budgets Will Grow By...":</strong>
+              Three vertical bars in vibrant teal:
+              <ul class="list-disc list-inside mt-1 space-y-1">
+                <li>Tallest bar: <strong>41%</strong>, labeled “1–10% Growth”</li>
+                <li>Middle bar: <strong>15%</strong>, labeled “11–20% Growth”</li>
+                <li>Shortest bar: <strong>11%</strong>, labeled “21%+ Growth”</li>
+              </ul>
+            </p>
+            <p class="text-sm leading-relaxed text-gray-800 dark:text-gray-200 mt-3 italic">
+              Style: corporate dashboard, high-resolution vector art, legible sans-serif, subtle finance/social icons, studio lighting.
+            </p>
+          </div>
+        </div>
+        
+        <!-- Step 2: Generation -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-blue-100 dark:bg-blue-900 flex items-center justify-center">
+              <span class="text-blue-600 dark:text-blue-300 font-bold">2</span>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Generation - Initial Design</h3>
+          </div>
+          
+          <div class="bg-white dark:bg-gray-800 rounded-2xl p-8 border-2 border-blue-200 dark:border-blue-900">
+            <div class="text-center">
+              <h4 class="text-lg font-semibold text-gray-800 dark:text-white mb-6">Initial Dashboard Design</h4>
+              <img src="assets/case3_initial.png" alt="Initial Dashboard Design" class="w-full max-w-lg mx-auto rounded-lg shadow-md">
+              <p class="text-sm text-gray-600 dark:text-gray-300 mt-4">
+                First attempt includes both donut chart and bar chart but contains multiple structural errors
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Step 3: Reflection Round 1 -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-orange-100 dark:bg-orange-900 flex items-center justify-center">
+              <span class="text-orange-600 dark:text-orange-300 font-bold">3</span>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Reflection - Round 1</h3>
+          </div>
+          
+          <div class="backdrop-blur-2xl bg-gradient-to-br from-white/40 to-white/20 dark:from-black/40 dark:to-black/20 rounded-2xl p-6 border border-white/30 dark:border-white/15">
+            <div class="text-xs font-semibold text-red-600 dark:text-red-400 mb-3 drop-shadow-md">🔍 ISSUE DETECTED</div>
+            <p class="text-sm leading-relaxed text-gray-800 dark:text-gray-200">
+              Critical labeling error found in the donut chart:
+            </p>
+            <div class="mt-4 bg-red-50 dark:bg-red-900/20 p-4 rounded-lg">
+              <div class="text-sm font-medium text-red-700 dark:text-red-300">
+                ❌ Label-Slice Mismatch:
+                <ul class="mt-1 space-y-1">
+                  <li>The <strong>64% segment</strong> is incorrectly labeled as "<strong>Stay the Same</strong>"</li>
+                  <li>The correct label should be "<strong>Increase</strong>"</li>
+                </ul>
+              </div>
+            </div>
+            <p class="text-sm mt-3 text-gray-800 dark:text-gray-200">
+              <strong>Instruction:</strong> In the pie chart, relabel the light blue segment from 'Increase' to 'Stay the Same' while keeping proportions: 64% (Increase), 34% (Stay the Same), 2% (Decrease). Also update bar chart labels: '1–10% Growth' → 41%, '11–20% Growth' → 15%, '21%+ Growth' → 11%. Adjust heights and numeric labels accordingly.
+            </p>
+          </div>
+        </div>
+        
+        <!-- Step 4: Refinement Round 1 -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-teal-100 dark:bg-teal-900 flex items-center justify-center">
+              <span class="text-teal-600 dark:text-teal-300 font-bold">4</span>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Refinement - Round 1</h3>
+          </div>
+          
+          <div class="bg-gradient-to-br from-sky-50 to-cyan-50 dark:from-sky-900/20 dark:to-cyan-900/20 rounded-2xl p-8 border-2 border-sky-200 dark:border-sky-900">
+            <div class="text-center">
+              <h4 class="text-lg font-semibold text-gray-800 dark:text-white mb-6">After First Refinement</h4>
+              <img src="assets/case3_middle1.png" alt="After First Refinement" class="w-full max-w-lg mx-auto rounded-lg shadow-lg border border-sky-200">
+              <div class="mt-6 p-4 bg-white/60 dark:bg-gray-800/60 rounded-lg">
+                <div class="text-sm font-medium text-sky-700 dark:text-sky-300 mb-2">🔧 Fixed Labeling Error</div>
+                <ul class="text-xs text-gray-600 dark:text-gray-300 space-y-1">
+                  <li>• 'Increase' now correctly labeled on 64% teal slice</li>
+                  <li>• Bar percentages updated: 41%, 15%, 11%</li>
+                  <li>• Text rendering improved</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Step 5: Reflection Round 2 -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-yellow-100 dark:bg-yellow-900 flex items-center justify-center">
+              <span class="text-yellow-600 dark:text-yellow-300 font-bold">5</span>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Reflection - Round 2</h3>
+          </div>
+          
+          <div class="backdrop-blur-2xl bg-gradient-to-br from-white/40 to-white/20 dark:from-black/40 dark:to-black/20 rounded-2xl p-6 border border-white/30 dark:border-white/15">
+            <div class="text-xs font-semibold text-yellow-600 dark:text-yellow-400 mb-3 drop-shadow-md">⚠️ RESIDUAL ISSUE</div>
+            <p class="text-sm leading-relaxed text-gray-800 dark:text-gray-200">
+              Structural misordering detected in bar chart:
+            </p>
+            <div class="mt-4 bg-yellow-50 dark:bg-yellow-900/20 p-4 rounded-lg">
+              <div class="text-sm font-medium text-yellow-700 dark:text-yellow-300">
+                ⚠️ Incorrect Bar Order:
+                <ul class="mt-1 space-y-1">
+                  <li>The tallest bar (41%) is currently under “11–20% Growth”</li>
+                  <li>The shorter bar (15%) is under “1–10% Growth” — swapped!</li>
+                </ul>
+              </div>
+            </div>
+            <p class="text-sm mt-3 text-gray-800 dark:text-gray-200">
+              <strong>Instruction:</strong> Swap the positions of the first two bars so that the tallest bar labeled 41% corresponds to '1–10% Growth' and the 15% bar to '11–20% Growth'. Ensure colors and legends remain consistent.
+            </p>
+          </div>
+        </div>
+        
+        <!-- Step 6: Refinement Round 2 -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-emerald-100 dark:bg-emerald-900 flex items-center justify-center">
+              <span class="text-emerald-600 dark:text-emerald-300 font-bold">6</span>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Refinement - Round 2</h3>
+          </div>
+          
+          <div class="bg-gradient-to-br from-emerald-50 to-green-50 dark:from-emerald-900/20 dark:to-green-900/20 rounded-2xl p-8 border-2 border-emerald-200 dark:border-emerald-900">
+            <div class="text-center">
+              <h4 class="text-lg font-semibold text-gray-800 dark:text-white mb-6">After Second Refinement</h4>
+              <img src="assets/case3_middle2.png" alt="After Second Refinement" class="w-full max-w-lg mx-auto rounded-lg shadow-xl border border-emerald-200">
+              <div class="mt-6 p-4 bg-white/70 dark:bg-gray-800/70 rounded-lg">
+                <div class="text-sm font-medium text-emerald-700 dark:text-emerald-300 mb-2">✅ Fixed Layout Order</div>
+                <ul class="text-xs text-gray-600 dark:text-gray-300 space-y-1">
+                  <li>• Bars reordered: tallest = 41% → “1–10% Growth”</li>
+                  <li>• Proportional scaling preserved</li>
+                  <li>• Legend alignment fixed</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Step 7: Reflection Round 3 -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-red-100 dark:bg-red-900 flex items-center justify-center">
+              <span class="text-red-600 dark:text-red-300 font-bold">7</span>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Reflection - Round 3</h3>
+          </div>
+          
+          <div class="backdrop-blur-2xl bg-gradient-to-br from-white/40 to-white/20 dark:from-black/40 dark:to-black/20 rounded-2xl p-6 border border-white/30 dark:border-white/15">
+            <div class="text-xs font-semibold text-red-600 dark:text-red-400 mb-3 drop-shadow-md">🔍 FINAL ADJUSTMENT</div>
+            <p class="text-sm leading-relaxed text-gray-800 dark:text-gray-200">
+              Geometric inaccuracies identified in donut chart:
+            </p>
+            <div class="mt-4 bg-red-50 dark:bg-red-900/20 p-4 rounded-lg">
+              <div class="text-sm font-medium text-red-700 dark:text-red-300">
+                🔢 Required Slice Angles:
+                <ul class="mt-1 space-y-1">
+                  <li>• Increase (64%) → <strong>230.4°</strong></li>
+                  <li>• Stay the Same (34%) → <strong>122.4°</strong></li>
+                  <li>• Decrease (2%) → <strong>7.2°</strong></li>
+                </ul>
+              </div>
+              <p class="text-xs text-red-600 dark:text-red-400 mt-2">
+                Current visual estimate shows 'Increase' slice exceeds 240° → overstates growth outlook.
+              </p>
+            </div>
+            <p class="text-sm mt-3 text-gray-800 dark:text-gray-200">
+              <strong>Instruction:</strong> Adjust the donut chart so that the 'Increase' slice is reduced to accurately represent 64% (~230°), add the missing 'Stay the Same' slice at 34% (~122°) in blue per legend, and keep the small 'Decrease' slice at 2%. Ensure angles match within ±2° tolerance.
+            </p>
+          </div>
+        </div>
+        
+        <!-- Step 8: Refinement Round 3 -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-violet-100 dark:bg-violet-900 flex items-center justify-center">
+              <span class="text-violet-600 dark:text-violet-300 font-bold">8</span>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Refinement - Round 3</h3>
+          </div>
+          
+          <div class="bg-gradient-to-br from-violet-50 to-indigo-50 dark:from-violet-900/20 dark:to-indigo-900/20 rounded-2xl p-8 border-2 border-violet-200 dark:border-violet-900">
+            <div class="text-center">
+              <h4 class="text-lg font-semibold text-gray-800 dark:text-white mb-6">Final Geometric Correction</h4>
+              <img src="assets/case3_middle3.png" alt="After Third Refinement" class="w-full max-w-lg mx-auto rounded-lg shadow-2xl border border-violet-200">
+              <div class="mt-6 p-4 bg-white/75 dark:bg-gray-800/75 rounded-lg">
+                <div class="text-sm font-medium text-violet-700 dark:text-violet-300 mb-2">📐 Precision Tuning Applied</div>
+                <ul class="text-xs text-gray-600 dark:text-gray-300 space-y-1">
+                  <li>• Slice angles corrected: 230.4° / 122.4° / 7.2°</li>
+                  <li>• Labels repositioned for clarity</li>
+                  <li>• Visual hierarchy enhanced</li>
+                  <li>• Consistent color mapping verified</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Step 9: Final Output -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-green-100 dark:bg-green-900 flex items-center justify-center">
+              <span class="text-green-600 dark:text-green-300 font-bold">9</span>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">✅ Final Verified Output</h3>
+          </div>
+          
+          <div class="bg-gradient-to-r from-green-50 to-emerald-50 dark:from-green-900/20 dark:to-emerald-900/20 rounded-2xl p-8 border-2 border-green-200 dark:border-green-900">
+            <div class="text-center">
+              <h4 class="text-lg font-semibold text-gray-800 dark:text-white mb-6">Final Verified Infographic</h4>
+              <img src="assets/case3_final.png" alt="Final Verified Infographic" class="w-full max-w-lg mx-auto rounded-lg shadow-2xl">
+              <div class="mt-6 p-4 bg-white/80 dark:bg-gray-800/80 rounded-lg border border-green-100 dark:border-green-900">
+                <div class="text-sm font-medium text-green-700 dark:text-green-300 mb-2">🎯 Self-Correction Complete</div>
+                <p class="text-sm text-gray-700 dark:text-gray-300">
+                  All issues resolved:
+                </p>
+                <ul class="text-xs text-gray-600 dark:text-gray-300 mt-2 space-y-1">
+                  <li>• All labels match data exactly</li>
+                  <li>• Bar order and heights correct</li>
+                  <li>• Donut angles precise within tolerance</li>
+                  <li>• No residual artifacts or misalignments</li>
+                </ul>
+                <div class="text-xs font-semibold text-green-600 dark:text-green-400 mt-3">
+                  ✅ <strong>Approved. Process terminated after maximum rounds.</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</template>
+
+
+<!-- 案例4: 智能手机和AI助手使用 -->
+<template id="dialogTemplate-case4">
+  <div role="dialog" id="dialog-modal" aria-labelledby="dialog-title" data-state="open" 
+       class="fixed left-[50%] top-[50%] z-[100] w-[90vw] max-w-6xl h-[95vh] translate-x-[-50%] translate-y-[-50%] rounded-3xl overflow-hidden flex flex-col data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 backdrop-blur-2xl bg-white/80 dark:bg-gray-900/80 border border-white/20 dark:border-white/10"
+       style="box-shadow: rgba(0, 0, 0, 0.3) 0px 20px 60px 0px, rgba(0, 0, 0, 0.2) 0px 8px 24px 0px, rgba(255, 255, 255, 0.4) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.15) 0px -1px 0px 0px inset; pointer-events: auto;"
+       tabindex="-1">
+    
+    <div class="flex items-center justify-between p-6 border-b border-gray-200 dark:border-gray-700">
+      <h2 id="dialog-title" class="text-2xl font-bold text-gray-900 dark:text-white">Case 4: Smartphone & AI Assistant Usage Statistics</h2>
+      <button class="rounded-full p-2 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors" aria-label="Close" type="button" onclick="closeDetail()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x w-6 h-6 text-gray-500 dark:text-gray-400">
+          <path d="M18 6 6 18"></path>
+          <path d="m6 6 12 12"></path>
+        </svg>
+      </button>
+    </div>
+    
+    <div class="flex-1 overflow-y-auto p-6 bg-gray-50 dark:bg-gray-950">
+      <div class="mx-auto max-w-5xl space-y-12">
+        
+        <!-- Original Data -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-gray-100 dark:bg-gray-800 flex items-center justify-center">
+              <span class="text-gray-600 dark:text-gray-300 font-bold">📊</span>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Original Data</h3>
+          </div>
+          
+          <div class="bg-white rounded-2xl p-8 border border-gray-200">
+            <h4 class="font-semibold text-gray-700 mb-6 text-center">Smartphone & AI Usage Statistics</h4>
+            <div class="bg-white rounded-lg border border-gray-200 p-6">
+              <table class="w-full text-sm">
+                <thead class="border-b border-gray-200">
+                  <tr>
+                    <th class="text-left py-3 text-gray-600 font-medium">Category</th>
+                    <th class="text-right py-3 text-gray-600 font-medium">Number</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="border-b border-gray-100">
+                    <td class="py-4 text-gray-700">Smartphone Users</td>
+                    <td class="text-right py-4 font-semibold text-blue-600">169M</td>
+                  </tr>
+                  <tr>
+                    <td class="py-4 text-gray-700">AI Assistant Users</td>
+                    <td class="text-right py-4 font-semibold text-green-600">72M</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Step 1: Rewriting -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-purple-100 dark:bg-purple-900 flex items-center justify-center">
+              <span class="text-purple-600 dark:text-purple-300 font-bold">1</span>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Rewriting - Enhanced Prompt</h3>
+          </div>
+          
+          <div class="backdrop-blur-2xl bg-gradient-to-br from-white/40 to-white/20 dark:from-black/40 dark:to-black/20 rounded-2xl p-6 border border-white/30 dark:border-white/15">
+            <div class="text-xs font-semibold text-purple-600 dark:text-purple-400 mb-3 drop-shadow-md">🚀 ENHANCED AI PROMPT</div>
+            <p class="text-sm leading-relaxed text-gray-800 dark:text-gray-200">
+              An infographic titled "Smartphone Ownership and AI Assistant Users", clean, modern flat design, light blue background.
+            </p>
+            <p class="text-sm leading-relaxed text-gray-800 dark:text-gray-200 mt-3">
+              Three horizontal sections in white boxes:
+            </p>
+            <ul class="list-disc list-inside text-sm text-gray-800 dark:text-gray-200 space-y-1 ml-5">
+              <li><strong>Left:</strong> Smartphone icon in dark blue circle. Text below: “169 million people own a smartphone”, with <strong>“169 million”</strong> in large bold orange font.</li>
+              <li><strong>Middle:</strong> Person head icon. Text: “72 million smartphones עם a personal assistant”, with <strong>“72 million”</strong> in bold orange.</li>
+              <li><strong>Right:</strong> Robot head icon. Text: “71 million people use an AI assistant monthly”, with <strong>“71 million”</strong> in bold orange.</li>
+            </ul>
+            <p class="text-sm italic text-gray-500 dark:text-gray-400 mt-3">
+              Style: minimalist, corporate, high clarity, sans-serif typography, balanced layout.
+            </p>
+          </div>
+        </div>
+        
+        <!-- Step 2: Generation -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-blue-100 dark:bg-blue-900 flex items-center justify-center">
+              <span class="text-blue-600 dark:text-blue-300 font-bold">2</span>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Generation - Initial Design</h3>
+          </div>
+          
+          <div class="bg-white dark:bg-gray-800 rounded-2xl p-8 border-2 border-blue-200 dark:border-blue-900">
+            <div class="text-center">
+              <h4 class="text-lg font-semibold text-gray-800 dark:text-white mb-6">Initial Technology Adoption Infographic</h4>
+              <img src="assets/case4_initial.png" alt="Initial Technology Infographic" class="w-full max-w-lg mx-auto rounded-lg shadow-md">
+              <p class="text-sm text-gray-600 dark:text-gray-300 mt-4">
+                First version contains language error ('עם'), typo ('7D million'), and redundant phrasing
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Step 3: Reflection Round 1 -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-orange-100 dark:bg-orange-900 flex items-center justify-center">
+              <span class="text-orange-600 dark:text-orange-300 font-bold">3</span>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Reflection - Round 1</h3>
+          </div>
+          
+          <div class="backdrop-blur-2xl bg-gradient-to-br from-white/40 to-white/20 dark:from-black/40 dark:to-black/20 rounded-2xl p-6 border border-white/30 dark:border-white/15">
+            <div class="text-xs font-semibold text-red-600 dark:text-red-400 mb-3 drop-shadow-md">🔍 ISSUE DETECTED</div>
+            <p class="text-sm leading-relaxed text-gray-800 dark:text-gray-200">
+              Language inconsistency found:
+            </p>
+            <div class="mt-4 bg-red-50 dark:bg-red-900/20 p-4 rounded-lg">
+              <div class="text-sm font-medium text-red-700 dark:text-red-300">
+                🌐 Foreign Character Detected:
+                <ul class="mt-1 space-y-1">
+                  <li>The word "<strong>עם</strong>" (Hebrew for 'with') appears in the middle card's description</li>
+                  <li>Expected English: "<strong>with</strong>"</li>
+                </ul>
+              </div>
+            </div>
+            <p class="text-sm mt-3 text-gray-800 dark:text-gray-200">
+              <strong>Instruction:</strong> Replace the Hebrew word 'עם' in the middle card's descriptive text with the English word 'with', so the text reads 'smartphones with a personal assistant'. Ensure font, size, and color match the existing style.
+            </p>
+          </div>
+        </div>
+        
+        <!-- Step 4: Refinement Round 1 -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-teal-100 dark:bg-teal-900 flex items-center justify-center">
+              <span class="text-teal-600 dark:text-teal-300 font-bold">4</span>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Refinement - Round 1</h3>
+          </div>
+          
+          <div class="bg-gradient-to-br from-sky-50 to-cyan-50 dark:from-sky-900/20 dark:to-cyan-900/20 rounded-2xl p-8 border-2 border-sky-200 dark:border-sky-900">
+            <div class="text-center">
+              <h4 class="text-lg font-semibold text-gray-800 dark:text-white mb-6">After First Refinement</h4>
+              <img src="assets/case4_middle1.png" alt="After First Refinement" class="w-full max-w-lg mx-auto rounded-lg shadow-lg border border-sky-200">
+              <div class="mt-6 p-4 bg-white/60 dark:bg-gray-800/60 rounded-lg">
+                <div class="text-sm font-medium text-sky-700 dark:text-sky-300 mb-2">🔧 Fixed Language Error</div>
+                <ul class="text-xs text-gray-600 dark:text-gray-300 space-y-1">
+                  <li>• Replaced 'עם' with 'with'</li>
+                  <li>• Font and styling preserved</li>
+                  <li>• No visual distortion introduced</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Step 5: Reflection Round 2 -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-yellow-100 dark:bg-yellow-900 flex items-center justify-center">
+              <span class="text-yellow-600 dark:text-yellow-300 font-bold">5</span>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Reflection - Round 2</h3>
+          </div>
+          
+          <div class="backdrop-blur-2xl bg-gradient-to-br from-white/40 to-white/20 dark:from-black/40 dark:to-black/20 rounded-2xl p-6 border border-white/30 dark:border-white/15">
+            <div class="text-xs font-semibold text-yellow-600 dark:text-yellow-400 mb-3 drop-shadow-md">⚠️ RESIDUAL ISSUE</div>
+            <p class="text-sm leading-relaxed text-gray-800 dark:text-gray-200">
+              Numeric rendering error detected:
+            </p>
+            <div class="mt-4 bg-yellow-50 dark:bg-yellow-900/20 p-4 rounded-lg">
+              <div class="text-sm font-medium text-yellow-700 dark:text-yellow-300">
+                ❌ Incorrect Number Display:
+                <ul class="mt-1 space-y-1">
+                  <li>The second card shows "<strong>7D million</strong>" instead of "<strong>72 million</strong>"</li>
+                  <li>Digit '2' rendered as corrupted character 'D'</li>
+                </ul>
+              </div>
+            </div>
+            <p class="text-sm mt-3 text-gray-800 dark:text-gray-200">
+              <strong>Instruction:</strong> Replace the text '7D million' in the second card with '72 million' in the same bold orange font and style as the other numbers, ensuring alignment, spacing, and typography match the existing design.
+            </p>
+          </div>
+        </div>
+        
+        <!-- Step 6: Refinement Round 2 -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-emerald-100 dark:bg-emerald-900 flex items-center justify-center">
+              <span class="text-emerald-600 dark:text-emerald-300 font-bold">6</span>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Refinement - Round 2</h3>
+          </div>
+          
+          <div class="bg-gradient-to-br from-emerald-50 to-green-50 dark:from-emerald-900/20 dark:to-green-900/20 rounded-2xl p-8 border-2 border-emerald-200 dark:border-emerald-900">
+            <div class="text-center">
+              <h4 class="text-lg font-semibold text-gray-800 dark:text-white mb-6">After Second Refinement</h4>
+              <img src="assets/case4_middle2.png" alt="After Second Refinement" class="w-full max-w-lg mx-auto rounded-lg shadow-xl border border-emerald-200">
+              <div class="mt-6 p-4 bg-white/70 dark:bg-gray-800/70 rounded-lg">
+                <div class="text-sm font-medium text-emerald-700 dark:text-emerald-300 mb-2">✅ Corrected Numerical Error</div>
+                <ul class="text-xs text-gray-600 dark:text-gray-300 space-y-1">
+                  <li>• '7D million' → '72 million'</li>
+                  <li>• Bold orange font restored</li>
+                  <li>• Baseline and kerning aligned</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Step 7: Reflection Round 3 -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-red-100 dark:bg-red-900 flex items-center justify-center">
+              <span class="text-red-600 dark:text-red-300 font-bold">7</span>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Reflection - Round 3</h3>
+          </div>
+          
+          <div class="backdrop-blur-2xl bg-gradient-to-br from-white/40 to-white/20 dark:from-black/40 dark:to-black/20 rounded-2xl p-6 border border-white/30 dark:border-white/15">
+            <div class="text-xs font-semibold text-red-600 dark:text-red-400 mb-3 drop-shadow-md">🔍 FINAL FIX</div>
+            <p class="text-sm leading-relaxed text-gray-800 dark:text-gray-200">
+              Redundant grammar issue identified:
+            </p>
+            <div class="mt-4 bg-red-50 dark:bg-red-900/20 p-4 rounded-lg">
+              <div class="text-sm font-medium text-red-700 dark:text-red-300">
+                📝 Duplicate Word Found:
+                <ul class="mt-1 space-y-1">
+                  <li>The middle card now reads:<br><em>"smartphones with a personal assistant with"</em></li>
+                  <li>Extra "with" at end creates confusion</li>
+                </ul>
+              </div>
+            </div>
+            <p class="text-sm mt-3 text-gray-800 dark:text-gray-200">
+              <strong>Instruction:</strong> Correct the text on the middle card so that it clearly reads 'smartphones with a personal assistant' — remove the trailing 'with'. Keep numerical value (72 million), font, colors, and layout unchanged.
+            </p>
+          </div>
+        </div>
+        
+        <!-- Step 8: Refinement Round 3 -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-violet-100 dark:bg-violet-900 flex items-center justify-center">
+              <span class="text-violet-600 dark:text-violet-300 font-bold">8</span>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Refinement - Round 3</h3>
+          </div>
+          
+          <div class="bg-gradient-to-br from-violet-50 to-indigo-50 dark:from-violet-900/20 dark:to-indigo-900/20 rounded-2xl p-8 border-2 border-violet-200 dark:border-violet-900">
+            <div class="text-center">
+              <h4 class="text-lg font-semibold text-gray-800 dark:text-white mb-6">Final Text Cleanup</h4>
+              <img src="assets/case4_middle3.png" alt="After Third Refinement" class="w-full max-w-lg mx-auto rounded-lg shadow-2xl border border-violet-200">
+              <div class="mt-6 p-4 bg-white/75 dark:bg-gray-800/75 rounded-lg">
+                <div class="text-sm font-medium text-violet-700 dark:text-violet-300 mb-2">🧹 Final Polish Applied</div>
+                <ul class="text-xs text-gray-600 dark:text-gray-300 space-y-1">
+                  <li>• Removed redundant "with"</li>
+                  <li>• Phrase now reads naturally</li>
+                  <li>• Typography and alignment preserved</li>
+                  <li>• All cards visually balanced</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Step 9: Final Output -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-green-100 dark:bg-green-900 flex items-center justify-center">
+              <span class="text-green-600 dark:text-green-300 font-bold">9</span>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">✅ Final Verified Output</h3>
+          </div>
+          
+          <div class="bg-gradient-to-r from-green-50 to-emerald-50 dark:from-green-900/20 dark:to-emerald-900/20 rounded-2xl p-8 border-2 border-green-200 dark:border-green-900">
+            <div class="text-center">
+              <h4 class="text-lg font-semibold text-gray-800 dark:text-white mb-6">Final Verified Infographic</h4>
+              <img src="assets/case4_final.png" alt="Final Verified Infographic" class="w-full max-w-lg mx-auto rounded-lg shadow-2xl">
+              <div class="mt-6 p-4 bg-white/80 dark:bg-gray-800/80 rounded-lg border border-green-100 dark:border-green-900">
+                <div class="text-sm font-medium text-green-700 dark:text-green-300 mb-2">🎯 Self-Correction Complete</div>
+                <p class="text-sm text-gray-700 dark:text-gray-300">
+                  All issues resolved:
+                </p>
+                <ul class="text-xs text-gray-600 dark:text-gray-300 mt-2 space-y-1">
+                  <li>• Language corrected (English only)</li>
+                  <li>• Number fixed: 72M accurate</li>
+                  <li>• Grammar cleaned: no redundancy</li>
+                  <li>• Visual hierarchy consistent</li>
+                </ul>
+                <div class="text-xs font-semibold text-green-600 dark:text-green-400 mt-3">
+                  ✅ <strong>Approved. Process terminated after maximum refinement rounds.</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</template>
+
+<!-- 案例5: 财务年度对比 -->
+<template id="dialogTemplate-case5">
+  <div role="dialog" id="dialog-modal" aria-labelledby="dialog-title" data-state="open" 
+       class="fixed left-[50%] top-[50%] z-[100] w-[90vw] max-w-6xl h-[95vh] translate-x-[-50%] translate-y-[-50%] rounded-3xl overflow-hidden flex flex-col data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 backdrop-blur-2xl bg-white/80 dark:bg-gray-900/80 border border-white/20 dark:border-white/10"
+       style="box-shadow: rgba(0, 0, 0, 0.3) 0px 20px 60px 0px, rgba(0, 0, 0, 0.2) 0px 8px 24px 0px, rgba(255, 255, 255, 0.4) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.15) 0px -1px 0px 0px inset; pointer-events: auto;"
+       tabindex="-1">
+    
+    <div class="flex items-center justify-between p-6 border-b border-gray-200 dark:border-gray-700">
+      <h2 id="dialog-title" class="text-2xl font-bold text-gray-900 dark:text-white">Case 5: Comparison of Financial Year Values and Percentage Change</h2>
+      <button class="rounded-full p-2 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors" aria-label="Close" type="button" onclick="closeDetail()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x w-6 h-6 text-gray-500 dark:text-gray-400">
+          <path d="M18 6 6 18"></path>
+          <path d="m6 6 12 12"></path>
+        </svg>
+      </button>
+    </div>
+    
+    <div class="flex-1 overflow-y-auto p-6 bg-gray-50 dark:bg-gray-950">
+      <div class="mx-auto max-w-5xl space-y-12">
+        
+        <!-- Original Data -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-gray-100 dark:bg-gray-800 flex items-center justify-center">
+              <span class="text-gray-600 dark:text-gray-300 font-bold">📊</span>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Original Data</h3>
+          </div>
+          
+          <div class="bg-white rounded-2xl p-8 border border-gray-200">
+            <h4 class="font-semibold text-gray-700 mb-6 text-center">Financial Year Comparison</h4>
+            <div class="bg-white rounded-lg border border-gray-200 p-6">
+              <table class="w-full text-sm">
+                <thead class="border-b border-gray-200">
+                  <tr>
+                    <th class="text-left py-3 text-gray-600 font-medium">Financial Year</th>
+                    <th class="text-right py-3 text-gray-600 font-medium">Value</th>
+                    <th class="text-right py-3 text-gray-600 font-medium">% Change</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="border-b border-gray-100">
+                    <td class="py-4 text-gray-700">18/19</td>
+                    <td class="text-right py-4 font-semibold text-blue-600">247.5</td>
+                    <td class="text-right py-4 text-gray-700">-</td>
+                  </tr>
+                  <tr>
+                    <td class="py-4 text-gray-700">19/20</td>
+                    <td class="text-right py-4 font-semibold text-orange-600">211.5</td>
+                    <td class="text-right py-4 font-semibold text-red-600">-14.5%</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Step 1: Rewriting -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-purple-100 dark:bg-purple-900 flex items-center justify-center">
+              <span class="text-purple-600 dark:text-purple-300 font-bold">1</span>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Rewriting - Enhanced Prompt</h3>
+          </div>
+          
+          <div class="backdrop-blur-2xl bg-gradient-to-br from-white/40 to-white/20 dark:from-black/40 dark:to-black/20 rounded-2xl p-6 border border-white/30 dark:border-white/15">
+            <div class="text-xs font-semibold text-purple-600 dark:text-purple-400 mb-3 drop-shadow-md">🚀 ENHANCED AI PROMPT</div>
+            <p class="text-sm leading-relaxed text-gray-800 dark:text-gray-200">
+              A clean, minimalist infographic comparing financial data for two years. The design is split into two side-by-side sections on a white background.
+            </p>
+            <p class="text-sm leading-relaxed text-gray-800 dark:text-gray-200 mt-3">
+              <strong>Left (18/19):</strong>
+              <ul class="list-disc list-inside ml-5 mt-1 space-y-1">
+                <li>A large circular arc with the value "247.5" centered inside</li>
+                <li>Beneath: label "18/19"</li>
+              </ul>
+            </p>
+            <p class="text-sm leading-relaxed text-gray-800 dark:text-gray-200 mt-3">
+              <strong>Right (19/20):</strong>
+              <ul class="list-disc list-inside ml-5 mt-1 space-y-1">
+                <li>A smaller circular arc with "211.5" inside</li>
+                <li>Beneath: label "19/20"</li>
+              </ul>
+            </p>
+            <p class="text-sm leading-relaxed text-gray-800 dark:text-gray-200 mt-3">
+              <strong>Center:</strong> A red speech bubble containing "-14.5%" to emphasize year-over-year decrease.
+            </p>
+            <p class="text-sm italic text-gray-500 dark:text-gray-400 mt-2">
+              Style: modern, sans-serif typography, proportional sizing based on values, visual storytelling focus.
+            </p>
+          </div>
+        </div>
+        
+        <!-- Step 2: Generation -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-blue-100 dark:bg-blue-900 flex items-center justify-center">
+              <span class="text-blue-600 dark:text-blue-300 font-bold">2</span>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Generation - Initial Design</h3>
+          </div>
+          
+          <div class="bg-white dark:bg-gray-800 rounded-2xl p-8 border-2 border-blue-200 dark:border-blue-900">
+            <div class="text-center">
+              <h4 class="text-lg font-semibold text-gray-800 dark:text-white mb-6">Initial Financial Year Infographic</h4>
+              <img src="assets/case5_initial.png" alt="Initial Financial Infographic" class="w-full max-w-lg mx-auto rounded-lg shadow-md">
+              <p class="text-sm text-gray-600 dark:text-gray-300 mt-4">
+                First version shows arcs with incorrect geometric proportionality — right arc too long
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Step 3: Reflection -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-orange-100 dark:bg-orange-900 flex items-center justify-center">
+              <span class="text-orange-600 dark:text-orange-300 font-bold">3</span>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Reflection - Problem Analysis</h3>
+          </div>
+          
+          <div class="backdrop-blur-2xl bg-gradient-to-br from-white/40 to-white/20 dark:from-black/40 dark:to-black/20 rounded-2xl p-6 border border-white/30 dark:border-white/15">
+            <div class="text-xs font-semibold text-red-600 dark:text-red-400 mb-3 drop-shadow-md">🔍 ISSUE DETECTED</div>
+            <p class="text-sm leading-relaxed text-gray-800 dark:text-gray-200">
+              Geometric scaling error in visual representation:
+            </p>
+            <div class="mt-4 bg-red-50 dark:bg-red-900/20 p-4 rounded-lg">
+              <div class="text-sm font-medium text-red-700 dark:text-red-300">
+                📐 Proportion Mismatch:
+                <ul class="mt-1 space-y-1">
+                  <li>Expected ratio: <code>211.5 ÷ 247.5 = 85.5%</code></li>
+                  <li>Current arc length suggests ~95% size → overstates 19/20 value</li>
+                </ul>
+              </div>
+              <p class="text-xs text-red-600 dark:text-red-400 mt-2">
+                The endpoint should be moved counter-clockwise by ~13.5° to align with true proportion.
+              </p>
+            </div>
+            <p class="text-sm mt-3 text-gray-800 dark:text-gray-200">
+              <strong>Instruction:</strong> Correct the geometric proportionality of the smaller circular arc representing 211.5. Shorten it so its angle is approximately 85.5% of the larger arc’s angle. Move the arc's endpoint counter-clockwise to end roughly halfway between the 3 and 4 o'clock positions.
+            </p>
+          </div>
+        </div>
+        
+        <!-- Step 4: Refinement Round 1 -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-teal-100 dark:bg-teal-900 flex items-center justify-center">
+              <span class="text-teal-600 dark:text-teal-300 font-bold">4</span>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Refinement - Round 1</h3>
+          </div>
+          
+          <div class="bg-gradient-to-br from-sky-50 to-cyan-50 dark:from-sky-900/20 dark:to-cyan-900/20 rounded-2xl p-8 border-2 border-sky-200 dark:border-sky-900">
+            <div class="text-center">
+              <h4 class="text-lg font-semibold text-gray-800 dark:text-white mb-6">After First Refinement</h4>
+              <img src="assets/case5_middle1.png" alt="After First Refinement" class="w-full max-w-lg mx-auto rounded-lg shadow-lg border border-sky-200">
+              <div class="mt-6 p-4 bg-white/60 dark:bg-gray-800/60 rounded-lg">
+                <div class="text-sm font-medium text-sky-700 dark:text-sky-300 mb-2">🔧 Applied Fix</div>
+                <ul class="text-xs text-gray-600 dark:text-gray-300 space-y-1">
+                  <li>• Arc scaled to 85.5% of original</li>
+                  <li>• Endpoint repositioned to ~3:30 position</li>
+                  <li>• Value labels preserved</li>
+                  <li>• Red “-14.5%” bubble retained</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Step 5: Final Output -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-emerald-100 dark:bg-emerald-900 flex items-center justify-center">
+              <span class="text-emerald-600 dark:text-emerald-300 font-bold">5</span>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">✅ Final Verified Output</h3>
+          </div>
+          
+          <div class="bg-gradient-to-r from-emerald-50 to-green-50 dark:from-emerald-900/20 dark:to-green-900/20 rounded-2xl p-8 border-2 border-emerald-200 dark:border-emerald-900">
+            <div class="text-center">
+              <h4 class="text-lg font-semibold text-gray-800 dark:text-white mb-6">Final Verified Infographic</h4>
+              <img src="assets/case5_final.png" alt="Final Verified Infographic" class="w-full max-w-lg mx-auto rounded-lg shadow-2xl">
+              <div class="mt-6 p-4 bg-white/70 dark:bg-gray-800/70 rounded-lg border border-emerald-100 dark:border-emerald-900">
+                <div class="text-sm font-medium text-emerald-700 dark:text-emerald-300 mb-2">🎯 Self-Correction Complete</div>
+                <p class="text-sm text-gray-700 dark:text-gray-300">
+                  Re-check confirms:
+                </p>
+                <ul class="text-xs text-gray-600 dark:text-gray-300 mt-2 space-y-1">
+                  <li>• Visual size matches data: 211.5 ≈ 85.5% of 247.5</li>
+                  <li>• Labels clear and correctly positioned</li>
+                  <li>• Color coding consistent</li>
+                  <li>• No artifacts introduced</li>
+                </ul>
+                <div class="text-xs font-semibold text-emerald-600 dark:text-emerald-400 mt-3">
+                  ✅ <strong>No further issues found. Output approved.</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</template>
+
+<!-- 案例6: 社交媒体影响调查 -->
+<template id="dialogTemplate-case6">
+  <div role="dialog" id="dialog-modal" aria-labelledby="dialog-title" data-state="open" 
+       class="fixed left-[50%] top-[50%] z-[100] w-[90vw] max-w-6xl h-[95vh] translate-x-[-50%] translate-y-[-50%] rounded-3xl overflow-hidden flex flex-col data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 backdrop-blur-2xl bg-white/80 dark:bg-gray-900/80 border border-white/20 dark:border-white/10"
+       style="box-shadow: rgba(0, 0, 0, 0.3) 0px 20px 60px 0px, rgba(0, 0, 0, 0.2) 0px 8px 24px 0px, rgba(255, 255, 255, 0.4) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.15) 0px -1px 0px 0px inset; pointer-events: auto;"
+       tabindex="-1">
+    
+    <div class="flex items-center justify-between p-6 border-b border-gray-200 dark:border-gray-700">
+      <h2 id="dialog-title" class="text-2xl font-bold text-gray-900 dark:text-white">Case 6: How Does Social Media Popularity Affect Your Life?</h2>
+      <button class="rounded-full p-2 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors" aria-label="Close" type="button" onclick="closeDetail()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x w-6 h-6 text-gray-500 dark:text-gray-400">
+          <path d="M18 6 6 18"></path>
+          <path d="m6 6 12 12"></path>
+        </svg>
+      </button>
+    </div>
+    
+    <div class="flex-1 overflow-y-auto p-6 bg-gray-50 dark:bg-gray-950">
+      <div class="mx-auto max-w-5xl space-y-12">
+        
+        <!-- Original Data -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-gray-100 dark:bg-gray-800 flex items-center justify-center">
+              <span class="text-gray-600 dark:text-gray-300 font-bold">📊</span>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Original Data</h3>
+          </div>
+          
+          <div class="bg-white rounded-2xl p-8 border border-gray-200">
+            <h4 class="font-semibold text-gray-700 mb-6 text-center">How Does Social Media Popularity Affect Your Life?</h4>
+            <div class="bg-white rounded-lg border border-gray-200 p-6">
+              <table class="w-full text-sm">
+                <thead class="border-b border-gray-200">
+                  <tr>
+                    <th class="text-left py-3 text-gray-600 font-medium">Effect</th>
+                    <th class="text-right py-3 text-gray-600 font-medium">Number</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="border-b border-gray-100">
+                    <td class="py-4 text-gray-700">Limits attention span when completing assignments</td>
+                    <td class="text-right py-4 font-semibold text-pink-600">75</td>
+                  </tr>
+                  <tr class="border-b border-gray-100">
+                    <td class="py-4 text-gray-700">Makes me proud to realize I am known online</td>
+                    <td class="text-right py-4 font-semibold text-purple-600">25</td>
+                  </tr>
+                  <tr class="border-b border-gray-100">
+                    <td class="py-4 text-gray-700">I hide behind my social media</td>
+                    <td class="text-right py-4 font-semibold text-teal-600">10</td>
+                  </tr>
+                  <tr>
+                    <td class="py-4 text-gray-700">Decreases my mental health and creates toxicity</td>
+                    <td class="text-right py-4 font-semibold text-orange-600">35</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Step 1: Rewriting -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-purple-100 dark:bg-purple-900 flex items-center justify-center">
+              <span class="text-purple-600 dark:text-purple-300 font-bold">1</span>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Rewriting - Enhanced Prompt</h3>
+          </div>
+          
+          <div class="backdrop-blur-2xl bg-gradient-to-br from-white/40 to-white/20 dark:from-black/40 dark:to-black/20 rounded-2xl p-6 border border-white/30 dark:border-white/15">
+            <div class="text-xs font-semibold text-purple-600 dark:text-purple-400 mb-3 drop-shadow-md">🚀 ENHANCED AI PROMPT</div>
+            <p class="text-sm leading-relaxed text-gray-800 dark:text-gray-200">
+              An infographic titled "How does social media popularity affect your life?".
+            </p>
+            <p class="text-sm leading-relaxed text-gray-800 dark:text-gray-200 mt-3">
+              Four horizontally aligned items on a light gray background:
+            </p>
+            <ul class="list-disc list-inside text-sm text-gray-800 dark:text-gray-200 space-y-1 ml-5">
+              <li><strong>Pink circle:</strong> "75", label: "Limits attention span..."</li>
+              <li><strong>Purple circle:</strong> "25", label: "Makes me proud..."</li>
+              <li><strong>Teal circle:</strong> "10", label: "I hide behind..."</li>
+              <li><strong>Orange circle:</strong> "35", label: "Decreases mental health..."</li>
+            </ul>
+            <p class="text-sm leading-relaxed text-gray-800 dark:text-gray-200 mt-3">
+              Each has gradient-filled circle, white bold number, line connector, and clear sans-serif description below.
+            </p>
+            <p class="text-sm italic text-gray-500 dark:text-gray-400 mt-2">
+              Style: clean, modern flat design, balanced spacing, proportional sizing by value.
+            </p>
+          </div>
+        </div>
+        
+        <!-- Step 2: Generation -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-blue-100 dark:bg-blue-900 flex items-center justify-center">
+              <span class="text-blue-600 dark:text-blue-300 font-bold">2</span>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Generation - Initial Design</h3>
+          </div>
+          
+          <div class="bg-white dark:bg-gray-800 rounded-2xl p-8 border-2 border-blue-200 dark:border-blue-900">
+            <div class="text-center">
+              <h4 class="text-lg font-semibold text-gray-800 dark:text-white mb-6">Initial Social Media Impact Infographic</h4>
+              <img src="assets/case6_initial.png" alt="Initial Social Media Impact" class="w-full max-w-lg mx-auto rounded-lg shadow-md">
+              <p class="text-sm text-gray-600 dark:text-gray-300 mt-4">
+                First version shows incorrect visual hierarchy — orange circle (35) smaller than purple (25)
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Step 3: Reflection -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-orange-100 dark:bg-orange-900 flex items-center justify-center">
+              <span class="text-orange-600 dark:text-orange-300 font-bold">3</span>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Reflection - Problem Analysis</h3>
+          </div>
+          
+          <div class="backdrop-blur-2xl bg-gradient-to-br from-white/40 to-white/20 dark:from-black/40 dark:to-black/20 rounded-2xl p-6 border border-white/30 dark:border-white/15">
+            <div class="text-xs font-semibold text-red-600 dark:text-red-400 mb-3 drop-shadow-md">🔍 ISSUE DETECTED</div>
+            <p class="text-sm leading-relaxed text-gray-800 dark:text-gray-200">
+              Critical visual fidelity error in size encoding:
+            </p>
+            <div class="mt-4 bg-red-50 dark:bg-red-900/20 p-4 rounded-lg">
+              <div class="text-sm font-medium text-red-700 dark:text-red-300">
+                📏 Size Inversion Found:
+                <ul class="mt-1 space-y-1">
+                  <li>The <strong>orange circle (35)</strong> is visually smaller than the <strong>purple circle (25)</strong></li>
+                  <li>Expected order by area: <code>75 > 35 > 25 > 10</code></li>
+                </ul>
+              </div>
+              <p class="text-xs text-red-600 dark:text-red-400 mt-2">
+                This misleads viewers about the relative impact of each effect.
+              </p>
+            </div>
+            <p class="text-sm mt-3 text-gray-800 dark:text-gray-200">
+              <strong>Instruction:</strong> Correct the geometric proportionality of the circles so their sizes accurately represent the numbers they contain. Resize the orange circle to be visibly larger than the purple one. Final size order must be: pink (75), orange (35), purple (25), teal (10).
+            </p>
+          </div>
+        </div>
+        
+        <!-- Step 4: Refinement Round 1 -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-teal-100 dark:bg-teal-900 flex items-center justify-center">
+              <span class="text-teal-600 dark:text-teal-300 font-bold">4</span>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Refinement - Round 1</h3>
+          </div>
+          
+          <div class="bg-gradient-to-br from-sky-50 to-cyan-50 dark:from-sky-900/20 dark:to-cyan-900/20 rounded-2xl p-8 border-2 border-sky-200 dark:border-sky-900">
+            <div class="text-center">
+              <h4 class="text-lg font-semibold text-gray-800 dark:text-white mb-6">After First Refinement</h4>
+              <img src="assets/case6_middle1.png" alt="After First Refinement" class="w-full max-w-lg mx-auto rounded-lg shadow-lg border border-sky-200">
+              <div class="mt-6 p-4 bg-white/60 dark:bg-gray-800/60 rounded-lg">
+                <div class="text-sm font-medium text-sky-700 dark:text-sky-300 mb-2">🔧 Applied Fix</div>
+                <ul class="text-xs text-gray-600 dark:text-gray-300 space-y-1">
+                  <li>• Orange circle resized to reflect 35</li>
+                  <li>• Visual hierarchy now correct: 75 > 35 > 25 > 10</li>
+                  <li>• Circle gradients preserved</li>
+                  <li>• Line connectors re-aligned</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Step 5: Final Output -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-emerald-100 dark:bg-emerald-900 flex items-center justify-center">
+              <span class="text-emerald-600 dark:text-emerald-300 font-bold">5</span>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">✅ Final Verified Output</h3>
+          </div>
+          
+          <div class="bg-gradient-to-r from-emerald-50 to-green-50 dark:from-emerald-900/20 dark:to-green-900/20 rounded-2xl p-8 border-2 border-emerald-200 dark:border-emerald-900">
+            <div class="text-center">
+              <h4 class="text-lg font-semibold text-gray-800 dark:text-white mb-6">Final Verified Infographic</h4>
+              <img src="assets/case6_final.png" alt="Final Verified Infographic" class="w-full max-w-lg mx-auto rounded-lg shadow-2xl">
+              <div class="mt-6 p-4 bg-white/70 dark:bg-gray-800/70 rounded-lg border border-emerald-100 dark:border-emerald-900">
+                <div class="text-sm font-medium text-emerald-700 dark:text-emerald-300 mb-2">🎯 Self-Correction Complete</div>
+                <p class="text-sm text-gray-700 dark:text-gray-300">
+                  Re-check confirms accurate representation:
+                </p>
+                <ul class="text-xs text-gray-600 dark:text-gray-300 mt-2 space-y-1">
+                  <li>• Circle areas proportional to values</li>
+                  <li>• No overlap or layout issues</li>
+                  <li>• Text labels legible and connected</li>
+                  <li>• Color semantics preserved</li>
+                </ul>
+                <div class="text-xs font-semibold text-emerald-600 dark:text-emerald-400 mt-3">
+                  ✅ <strong>No further errors found. Output approved.</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</template>
+
+<!-- 案例7: 移动操作系统销售预测 -->
+<template id="dialogTemplate-case7">
+  <div role="dialog" id="dialog-modal" aria-labelledby="dialog-title" data-state="open" 
+       class="fixed left-[50%] top-[50%] z-[100] w-[90vw] max-w-6xl h-[95vh] translate-x-[-50%] translate-y-[-50%] rounded-3xl overflow-hidden flex flex-col data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 backdrop-blur-2xl bg-white/80 dark:bg-gray-900/80 border border-white/20 dark:border-white/10"
+       style="box-shadow: rgba(0, 0, 0, 0.3) 0px 20px 60px 0px, rgba(0, 0, 0, 0.2) 0px 8px 24px 0px, rgba(255, 255, 255, 0.4) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.15) 0px -1px 0px 0px inset; pointer-events: auto;"
+       tabindex="-1">
+    
+    <div class="flex items-center justify-between p-6 border-b border-gray-200 dark:border-gray-700">
+      <h2 id="dialog-title" class="text-2xl font-bold text-gray-900 dark:text-white">Case 7: Forecast of Mobile OS Sales (2009–2014)</h2>
+      <button class="rounded-full p-2 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors" aria-label="Close" type="button" onclick="closeDetail()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x w-6 h-6 text-gray-500 dark:text-gray-400">
+          <path d="M18 6 6 18"></path>
+          <path d="m6 6 12 12"></path>
+        </svg>
+      </button>
+    </div>
+    
+    <div class="flex-1 overflow-y-auto p-6 bg-gray-50 dark:bg-gray-950">
+      <div class="mx-auto max-w-5xl space-y-12">
+        
+        <!-- Original Data -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-gray-100 dark:bg-gray-800 flex items-center justify-center">
+              <span class="text-gray-600 dark:text-gray-300 font-bold">📊</span>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Original Data</h3>
+          </div>
+          
+          <div class="bg-white rounded-2xl p-8 border border-gray-200">
+            <h4 class="font-semibold text-gray-700 mb-6 text-center">Mobile OS Sales Forecast (Millions of Units) 2009–2014</h4>
+            <div class="bg-white rounded-lg border border-gray-200 p-6 overflow-x-auto">
+              <table class="w-full text-xs min-w-full">
+                <thead class="border-b border-gray-200">
+                  <tr>
+                    <th class="text-left py-3 text-gray-600 font-medium">Year</th>
+                    <th class="text-right py-3 text-gray-600 font-medium">Symbian</th>
+                    <th class="text-right py-3 text-gray-600 font-medium">Android</th>
+                    <th class="text-right py-3 text-gray-600 font-medium">RIM</th>
+                    <th class="text-right py-3 text-gray-600 font-medium">iOS</th>
+                    <th class="text-right py-3 text-gray-600 font-medium">WP</th>
+                    <th class="text-right py-3 text-gray-600 font-medium">Other OS</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="border-b border-gray-100">
+                    <td class="py-3 text-gray-700">2009</td>
+                    <td class="text-right py-3 font-semibold text-blue-600">80</td>
+                    <td class="text-right py-3 font-semibold text-red-600">10</td>
+                    <td class="text-right py-3 font-semibold text-green-600">35</td>
+                    <td class="text-right py-3 font-semibold text-purple-600">25</td>
+                    <td class="text-right py-3 font-semibold text-orange-600">10</td>
+                    <td class="text-right py-3 font-semibold text-cyan-600">15</td>
+                  </tr>
+                  <tr class="border-b border-gray-100">
+                    <td class="py-3 text-gray-700">2010</td>
+                    <td class="text-right py-3 font-semibold text-blue-600">115</td>
+                    <td class="text-right py-3 font-semibold text-red-600">40</td>
+                    <td class="text-right py-3 font-semibold text-green-600">50</td>
+                    <td class="text-right py-3 font-semibold text-purple-600">45</td>
+                    <td class="text-right py-3 font-semibold text-orange-600">15</td>
+                    <td class="text-right py-3 font-semibold text-cyan-600">25</td>
+                  </tr>
+                  <tr class="border-b border-gray-100">
+                    <td class="py-3 text-gray-700">2011</td>
+                    <td class="text-right py-3 font-semibold text-blue-600">125</td>
+                    <td class="text-right py-3 font-semibold text-red-600">85</td>
+                    <td class="text-right py-3 font-semibold text-green-600">70</td>
+                    <td class="text-right py-3 font-semibold text-purple-600">70</td>
+                    <td class="text-right py-3 font-semibold text-orange-600">20</td>
+                    <td class="text-right py-3 font-semibold text-cyan-600">40</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 text-gray-700">2014</td>
+                    <td class="text-right py-3 font-semibold text-blue-600">260</td>
+                    <td class="text-right py-3 font-semibold text-red-600">250</td>
+                    <td class="text-right py-3 font-semibold text-green-600">110</td>
+                    <td class="text-right py-3 font-semibold text-purple-600">120</td>
+                    <td class="text-right py-3 font-semibold text-orange-600">70</td>
+                    <td class="text-right py-3 font-semibold text-cyan-600">60</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Step 1: Rewriting -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-purple-100 dark:bg-purple-900 flex items-center justify-center">
+              <span class="text-purple-600 dark:text-purple-300 font-bold">1</span>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Rewriting - Enhanced Prompt</h3>
+          </div>
+          
+          <div class="backdrop-blur-2xl bg-gradient-to-br from-white/40 to-white/20 dark:from-black/40 dark:to-black/20 rounded-2xl p-6 border border-white/30 dark:border-white/15">
+            <div class="text-xs font-semibold text-purple-600 dark:text-purple-400 mb-3 drop-shadow-md">🚀 ENHANCED AI PROMPT</div>
+            <p class="text-sm leading-relaxed text-gray-800 dark:text-gray-200">
+              A clustered bar chart titled "Forecast of Mobile OS Sales to End Users by OS (Millions of Units)".
+            </p>
+            <p class="text-sm leading-relaxed text-gray-800 dark:text-gray-200 mt-3">
+              X-axis: years 2009, 2010, 2011, 2014<br>
+              Y-axis: 0–300 million units
+            </p>
+            <p class="text-sm leading-relaxed text-gray-800 dark:text-gray-200 mt-3">
+              Each year has six bars:
+              <ul class="list-disc list-inside ml-5 mt-1 space-y-1">
+                <li><strong>Symbian:</strong> blue</li>
+                <li><strong>Android:</strong> red</li>
+                <li><strong>Research In Motion (RIM):</strong> green</li>
+                <li><strong>iOS:</strong> purple</li>
+                <li><strong>Windows Phone:</strong> orange</li>
+                <li><strong>Other OS:</strong> light blue</li>
+              </ul>
+            </p>
+            <p class="text-sm leading-relaxed text-gray-800 dark:text-gray-200 mt-3">
+              Value labels on each bar. Clean legend at bottom. Professional white background.
+            </p>
+          </div>
+        </div>
+        
+        <!-- Step 2: Generation -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-blue-100 dark:bg-blue-900 flex items-center justify-center">
+              <span class="text-blue-600 dark:text-blue-300 font-bold">2</span>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Generation - Initial Design</h3>
+          </div>
+          
+          <div class="bg-white dark:bg-gray-800 rounded-2xl p-8 border-2 border-blue-200 dark:border-blue-900">
+            <div class="text-center">
+              <h4 class="text-lg font-semibold text-gray-800 dark:text-white mb-6">Initial Mobile OS Sales Bar Chart</h4>
+              <img src="assets/case7_initial.png" alt="Initial Mobile OS Sales Chart" class="w-full max-w-lg mx-auto rounded-lg shadow-md">
+              <p class="text-sm text-gray-600 dark:text-gray-300 mt-4">
+                First attempt contains typos, incorrect values, and color misalignment
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Step 3: Reflection Round 1 -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-orange-100 dark:bg-orange-900 flex items-center justify-center">
+              <span class="text-orange-600 dark:text-orange-300 font-bold">3</span>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Reflection - Round 1</h3>
+          </div>
+          
+          <div class="backdrop-blur-2xl bg-gradient-to-br from-white/40 to-white/20 dark:from-black/40 dark:to-black/20 rounded-2xl p-6 border border-white/30 dark:border-white/15">
+            <div class="text-xs font-semibold text-red-600 dark:text-red-400 mb-3 drop-shadow-md">🔍 ISSUE DETECTED</div>
+            <p class="text-sm leading-relaxed text-gray-800 dark:text-gray-200">
+              Textual errors in labeling found:
+            </p>
+            <div class="mt-4 bg-red-50 dark:bg-red-900/20 p-4 rounded-lg">
+              <div class="text-sm font-medium text-red-700 dark:text-red-300">
+                ✏️ Label Typos & Duplicates:
+                <ul class="mt-1 space-y-1">
+                  <li>'Research In Motim' → should be '<strong>Research In Motion</strong>'</li>
+                  <li>Duplicate entries for 'iOS' and 'Windows Phone' in legend</li>
+                  <li>'Windoms Phone' typo detected</li>
+                </ul>
+              </div>
+            </div>
+            <p class="text-sm mt-3 text-gray-800 dark:text-gray-200">
+              <strong>Instruction:</strong> Correct the legend: remove duplicates, fix spelling of 'Research In Motion' and 'Windows Phone'.
+            </p>
+          </div>
+        </div>
+        
+        <!-- Step 4: Refinement Round 1 -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-teal-100 dark:bg-teal-900 flex items-center justify-center">
+              <span class="text-teal-600 dark:text-teal-300 font-bold">4</span>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Refinement - Round 1</h3>
+          </div>
+          
+          <div class="bg-gradient-to-br from-sky-50 to-cyan-50 dark:from-sky-900/20 dark:to-cyan-900/20 rounded-2xl p-8 border-2 border-sky-200 dark:border-sky-900">
+            <div class="text-center">
+              <h4 class="text-lg font-semibold text-gray-800 dark:text-white mb-6">After First Refinement</h4>
+              <img src="assets/case7_middle1.png" alt="After First Refinement" class="w-full max-w-lg mx-auto rounded-lg shadow-lg border border-sky-200">
+              <div class="mt-6 p-4 bg-white/60 dark:bg-gray-800/60 rounded-lg">
+                <div class="text-sm font-medium text-sky-700 dark:text-sky-300 mb-2">🔧 Fixed Labels</div>
+                <ul class="text-xs text-gray-600 dark:text-gray-300 space-y-1">
+                  <li>• Legend typos corrected</li>
+                  <li>• Duplicate entries removed</li>
+                  <li>• Font consistency applied</li>
+                  <li>• No changes to bars yet</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Step 5: Reflection Round 2 -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-yellow-100 dark:bg-yellow-900 flex items-center justify-center">
+              <span class="text-yellow-600 dark:text-yellow-300 font-bold">5</span>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Reflection - Round 2</h3>
+          </div>
+          
+          <div class="backdrop-blur-2xl bg-gradient-to-br from-white/40 to-white/20 dark:from-black/40 dark:to-black/20 rounded-2xl p-6 border border-white/30 dark:border-white/15">
+            <div class="text-xs font-semibold text-yellow-600 dark:text-yellow-400 mb-3 drop-shadow-md">⚠️ RESIDUAL ISSUES</div>
+            <p class="text-sm leading-relaxed text-gray-800 dark:text-gray-200">
+              Data-value mismatch persists across multiple years:
+            </p>
+            <div class="mt-4 bg-yellow-50 dark:bg-yellow-900/20 p-4 rounded-lg">
+              <div class="text-sm font-medium text-yellow-700 dark:text-yellow-300">
+                📊 Incorrect Bar Heights:
+                <ul class="mt-1 space-y-1">
+                  <li><strong>2009:</strong> Android=10 (not 40), iOS=25 (not 35)</li>
+                  <li><strong>2010:</strong> RIM=50, WP=15, Other=25</li>
+                  <li><strong>2011:</strong> Symbian=125, Android=85, Other=40</li>
+                </ul>
+              </div>
+            </div>
+            <p class="text-sm mt-3 text-gray-800 dark:text-gray-200">
+              <strong>Instruction:</strong> Adjust all bars and their labels to match the correct table values. Ensure heights are geometrically proportional to values on a 0–300 scale.
+            </p>
+          </div>
+        </div>
+        
+        <!-- Step 6: Refinement Round 2 -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-emerald-100 dark:bg-emerald-900 flex items-center justify-center">
+              <span class="text-emerald-600 dark:text-emerald-300 font-bold">6</span>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Refinement - Round 2</h3>
+          </div>
+          
+          <div class="bg-gradient-to-br from-emerald-50 to-green-50 dark:from-emerald-900/20 dark:to-green-900/20 rounded-2xl p-8 border-2 border-emerald-200 dark:border-emerald-900">
+            <div class="text-center">
+              <h4 class="text-lg font-semibold text-gray-800 dark:text-white mb-6">After Second Refinement</h4>
+              <img src="assets/case7_middle2.png" alt="After Second Refinement" class="w-full max-w-lg mx-auto rounded-lg shadow-xl border border-emerald-200">
+              <div class="mt-6 p-4 bg-white/70 dark:bg-gray-800/70 rounded-lg">
+                <div class="text-sm font-medium text-emerald-700 dark:text-emerald-300 mb-2">✅ Updated Data Mapping</div>
+                <ul class="text-xs text-gray-600 dark:text-gray-300 space-y-1">
+                  <li>• All bar heights now reflect true values</li>
+                  <li>• Labels updated for all categories</li>
+                  <li>• Axis alignment verified</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Step 7: Reflection Round 3 -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-red-100 dark:bg-red-900 flex items-center justify-center">
+              <span class="text-red-600 dark:text-red-300 font-bold">7</span>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Reflection - Round 3</h3>
+          </div>
+          
+          <div class="backdrop-blur-2xl bg-gradient-to-br from-white/40 to-white/20 dark:from-black/40 dark:to-black/20 rounded-2xl p-6 border border-white/30 dark:border-white/15">
+            <div class="text-xs font-semibold text-red-600 dark:text-red-400 mb-3 drop-shadow-md">🔍 FINAL ADJUSTMENT</div>
+            <p class="text-sm leading-relaxed text-gray-800 dark:text-gray-200">
+              Color encoding error identified:
+            </p>
+            <div class="mt-4 bg-red-50 dark:bg-red-900/20 p-4 rounded-lg">
+              <div class="text-sm font-medium text-red-700 dark:text-red-300">
+                🎨 Color-Label Mismatch:
+                <ul class="mt-1 space-y-1">
+                  <li>Current chart shows <strong>iOS as orange</strong>, but should be <strong>purple</strong></li>
+                  <li><strong>Windows Phone is purple</strong> → should be <strong>orange</strong></li>
+                </ul>
+              </div>
+            </div>
+            <p class="text-sm mt-3 text-gray-800 dark:text-gray-200">
+              <strong>Instruction:</strong> Fix the legend mapping: Symbian (blue), Android (red), RIM (green), iOS (purple), Windows Phone (orange), Other OS (light blue). Redraw all bars with correct colors.
+            </p>
+          </div>
+        </div>
+        
+        <!-- Step 8: Refinement Round 3 -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-violet-100 dark:bg-violet-900 flex items-center justify-center">
+              <span class="text-violet-600 dark:text-violet-300 font-bold">8</span>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Refinement - Round 3</h3>
+          </div>
+          
+          <div class="bg-gradient-to-br from-violet-50 to-indigo-50 dark:from-violet-900/20 dark:to-indigo-900/20 rounded-2xl p-8 border-2 border-violet-200 dark:border-violet-900">
+            <div class="text-center">
+              <h4 class="text-lg font-semibold text-gray-800 dark:text-white mb-6">Final Color Correction</h4>
+              <img src="assets/case7_middle3.png" alt="After Third Refinement" class="w-full max-w-lg mx-auto rounded-lg shadow-2xl border border-violet-200">
+              <div class="mt-6 p-4 bg-white/75 dark:bg-gray-800/75 rounded-lg">
+                <div class="text-sm font-medium text-violet-700 dark:text-violet-300 mb-2">🎨 Color Scheme Fixed</div>
+                <ul class="text-xs text-gray-600 dark:text-gray-300 space-y-1">
+                  <li>• iOS restored to purple</li>
+                  <li>• Windows Phone set to orange</li>
+                  <li>• Legend re-aligned</li>
+                  <li>• Visual clarity improved</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Step 9: Final Output -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-green-100 dark:bg-green-900 flex items-center justify-center">
+              <span class="text-green-600 dark:text-green-300 font-bold">9</span>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">✅ Final Verified Output</h3>
+          </div>
+          
+          <div class="bg-gradient-to-r from-green-50 to-emerald-50 dark:from-green-900/20 dark:to-emerald-900/20 rounded-2xl p-8 border-2 border-green-200 dark:border-green-900">
+            <div class="text-center">
+              <h4 class="text-lg font-semibold text-gray-800 dark:text-white mb-6">Final Verified Infographic</h4>
+              <img src="assets/case7_final.png" alt="Final Verified Infographic" class="w-full max-w-lg mx-auto rounded-lg shadow-2xl">
+              <div class="mt-6 p-4 bg-white/80 dark:bg-gray-800/80 rounded-lg border border-green-100 dark:border-green-900">
+                <div class="text-sm font-medium text-green-700 dark:text-green-300 mb-2">🎯 Self-Correction Complete</div>
+                <p class="text-sm text-gray-700 dark:text-gray-300">
+                  Final audit confirms:
+                </p>
+                <ul class="text-xs text-gray-600 dark:text-gray-300 mt-2 space-y-1">
+                  <li>• All values accurately represented</li>
+                  <li>• Color-to-OS mapping correct</li>
+                  <li>• Labels clear and legible</li>
+                  <li>• Proportional scaling validated</li>
+                </ul>
+                <div class="text-xs font-semibold text-green-600 dark:text-green-400 mt-3">
+                  ⚠️ <strong>Max rounds reached. Output approved.</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</template>
+
+
+<!-- 案例8: 养老金分割 -->
+<template id="dialogTemplate-case8">
+  <div role="dialog" id="dialog-modal" aria-labelledby="dialog-title" data-state="open" 
+       class="fixed left-[50%] top-[50%] z-[100] w-[90vw] max-w-6xl h-[95vh] translate-x-[-50%] translate-y-[-50%] rounded-3xl overflow-hidden flex flex-col data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 backdrop-blur-2xl bg-white/80 dark:bg-gray-900/80 border border-white/20 dark:border-white/10"
+       style="box-shadow: rgba(0, 0, 0, 0.3) 0px 20px 60px 0px, rgba(0, 0, 0, 0.2) 0px 8px 24px 0px, rgba(255, 255, 255, 0.4) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.15) 0px -1px 0px 0px inset; pointer-events: auto;"
+       tabindex="-1">
+    
+    <div class="flex items-center justify-between p-6 border-b border-gray-200 dark:border-gray-700">
+      <h2 id="dialog-title" class="text-2xl font-bold text-gray-900 dark:text-white">Case 8: Breakdown of Pension Pot</h2>
+      <button class="rounded-full p-2 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors" aria-label="Close" type="button" onclick="closeDetail()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x w-6 h-6 text-gray-500 dark:text-gray-400">
+          <path d="M18 6 6 18"></path>
+          <path d="m6 6 12 12"></path>
+        </svg>
+      </button>
+    </div>
+    
+    <div class="flex-1 overflow-y-auto p-6 bg-gray-50 dark:bg-gray-950">
+      <div class="mx-auto max-w-5xl space-y-12">
+        
+        <!-- Original Data -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-gray-100 dark:bg-gray-800 flex items-center justify-center">
+              <span class="text-gray-600 dark:text-gray-300 font-bold">📊</span>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Original Data</h3>
+          </div>
+          
+          <div class="bg-white rounded-2xl p-8 border border-gray-200">
+            <h4 class="font-semibold text-gray-700 mb-6 text-center">Breakdown of Pension Pot</h4>
+            <div class="bg-white rounded-lg border border-gray-200 p-6">
+              <table class="w-full text-sm">
+                <thead class="border-b border-gray-200">
+                  <tr>
+                    <th class="text-left py-3 text-gray-600 font-medium">Category</th>
+                    <th class="text-right py-3 text-gray-600 font-medium">Amount</th>
+                    <th class="text-right py-3 text-gray-600 font-medium">Percentage</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="border-b border-gray-100">
+                    <td class="py-4 text-gray-700">Some of your tax-free cash</td>
+                    <td class="text-right py-4 font-semibold text-teal-600">£10,000</td>
+                    <td class="text-right py-4 text-gray-700">10%</td>
+                  </tr>
+                  <tr class="border-b border-gray-100">
+                    <td class="py-4 text-gray-700">Equivalent sum to drawdown</td>
+                    <td class="text-right py-4 font-semibold text-blue-600">£30,000</td>
+                    <td class="text-right py-4 text-gray-700">30%</td>
+                  </tr>
+                  <tr>
+                    <td class="py-4 text-gray-700">Remaining pension pot untouched</td>
+                    <td class="text-right py-4 font-semibold text-green-600">£60,000</td>
+                    <td class="text-right py-4 text-gray-700">60%</td>
+                  </tr>
+                  <tr class="bg-gray-50">
+                    <td class="py-4 text-gray-700 font-semibold">Total</td>
+                    <td class="text-right py-4 font-semibold text-gray-700">£100,000</td>
+                    <td class="text-right py-4 font-semibold text-gray-700">100%</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Step 1: Rewriting -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-purple-100 dark:bg-purple-900 flex items-center justify-center">
+              <span class="text-purple-600 dark:text-purple-300 font-bold">1</span>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Rewriting - Enhanced Prompt</h3>
+          </div>
+          
+          <div class="backdrop-blur-2xl bg-gradient-to-br from-white/40 to-white/20 dark:from-black/40 dark:to-black/20 rounded-2xl p-6 border border-white/30 dark:border-white/15">
+            <div class="text-xs font-semibold text-purple-600 dark:text-purple-400 mb-3 drop-shadow-md">🚀 ENHANCED AI PROMPT</div>
+            <p class="text-sm leading-relaxed text-gray-800 dark:text-gray-200">
+              A clean pie chart titled "Breakdown of Pension Pot" on white background.
+            </p>
+            <p class="text-sm leading-relaxed text-gray-800 dark:text-gray-200 mt-3">
+              Three slices:
+              <ul class="list-disc list-inside ml-5 mt-1 space-y-1">
+                <li><strong>Dark teal:</strong> "Some of your tax-free cash (£10,000)" – 10% (36°)</li>
+                <li><strong>Light blue:</strong> "Equivalent sum to drawdown (£30,000)" – 30% (108°)</li>
+                <li><strong>Light green:</strong> "Remaining pension pot untouched (£60,000)" – 60% (216°)</li>
+              </ul>
+            </p>
+            <p class="text-sm leading-relaxed text-gray-800 dark:text-gray-200 mt-3">
+              Legend on the right with colored squares and full labels. Clean sans-serif font. Callout lines connect each label to its slice.
+            </p>
+          </div>
+        </div>
+        
+        <!-- Step 2: Generation -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-blue-100 dark:bg-blue-900 flex items-center justify-center">
+              <span class="text-blue-600 dark:text-blue-300 font-bold">2</span>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Generation - Initial Design</h3>
+          </div>
+          
+          <div class="bg-white dark:bg-gray-800 rounded-2xl p-8 border-2 border-blue-200 dark:border-blue-900">
+            <div class="text-center">
+              <h4 class="text-lg font-semibold text-gray-800 dark:text-white mb-6">Initial Pension Distribution Pie Chart</h4>
+              <img src="assets/case8_initial.png" alt="Initial Pension Pie Chart" class="w-full max-w-lg mx-auto rounded-lg shadow-md">
+              <p class="text-sm text-gray-600 dark:text-gray-300 mt-4">
+                First version contains a phantom category and incorrect proportions
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Step 3: Reflection Round 1 -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-orange-100 dark:bg-orange-900 flex items-center justify-center">
+              <span class="text-orange-600 dark:text-orange-300 font-bold">3</span>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Reflection - Round 1</h3>
+          </div>
+          
+          <div class="backdrop-blur-2xl bg-gradient-to-br from-white/40 to-white/20 dark:from-black/40 dark:to-black/20 rounded-2xl p-6 border border-white/30 dark:border-white/15">
+            <div class="text-xs font-semibold text-red-600 dark:text-red-400 mb-3 drop-shadow-md">🔍 ISSUE DETECTED</div>
+            <p class="text-sm leading-relaxed text-gray-800 dark:text-gray-200">
+              Invalid data entry detected:
+            </p>
+            <div class="mt-4 bg-red-50 dark:bg-red-900/20 p-4 rounded-lg">
+              <div class="text-sm font-medium text-red-700 dark:text-red-300">
+                🚫 Phantom Category Found:
+                <ul class="mt-1 space-y-1">
+                  <li>An erroneous label "<strong>Equivalent oux-free cash</strong>" appears in the legend</li>
+                  <li>This category does not exist in source table</li>
+                </ul>
+              </div>
+            </div>
+            <p class="text-sm mt-3 text-gray-800 dark:text-gray-200">
+              <strong>Instruction:</strong> Remove the 'Equivalent oux-free cash' category and its label entirely. Ensure only three slices remain: tax-free cash (£10k), drawdown (£30k), and remaining pot (£60k).
+            </p>
+          </div>
+        </div>
+        
+        <!-- Step 4: Refinement Round 1 -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-teal-100 dark:bg-teal-900 flex items-center justify-center">
+              <span class="text-teal-600 dark:text-teal-300 font-bold">4</span>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Refinement - Round 1</h3>
+          </div>
+          
+          <div class="bg-gradient-to-br from-sky-50 to-cyan-50 dark:from-sky-900/20 dark:to-cyan-900/20 rounded-2xl p-8 border-2 border-sky-200 dark:border-sky-900">
+            <div class="text-center">
+              <h4 class="text-lg font-semibold text-gray-800 dark:text-white mb-6">After First Refinement</h4>
+              <img src="assets/case8_middle1.png" alt="After First Refinement" class="w-full max-w-lg mx-auto rounded-lg shadow-lg border border-sky-200">
+              <div class="mt-6 p-4 bg-white/60 dark:bg-gray-800/60 rounded-lg">
+                <div class="text-sm font-medium text-sky-700 dark:text-sky-300 mb-2">🔧 Removed Invalid Entry</div>
+                <ul class="text-xs text-gray-600 dark:text-gray-300 space-y-1">
+                  <li>• Deleted fake category</li>
+                  <li>• Remaining three slices preserved</li>
+                  <li>• Color consistency maintained</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Step 5: Reflection Round 2 -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-yellow-100 dark:bg-yellow-900 flex items-center justify-center">
+              <span class="text-yellow-600 dark:text-yellow-300 font-bold">5</span>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Reflection - Round 2</h3>
+          </div>
+          
+          <div class="backdrop-blur-2xl bg-gradient-to-br from-white/40 to-white/20 dark:from-black/40 dark:to-black/20 rounded-2xl p-6 border border-white/30 dark:border-white/15">
+            <div class="text-xs font-semibold text-yellow-600 dark:text-yellow-400 mb-3 drop-shadow-md">⚠️ RESIDUAL ISSUE</div>
+            <p class="text-sm leading-relaxed text-gray-800 dark:text-gray-200">
+              Proportional scaling error found:
+            </p>
+            <div class="mt-4 bg-yellow-50 dark:bg-yellow-900/20 p-4 rounded-lg">
+              <div class="text-sm font-medium text-yellow-700 dark:text-yellow-300">
+                📐 Incorrect Slice Angles:
+                <ul class="mt-1 space-y-1">
+                  <li>Current teal slice (~45°) too large for £10k (should be 36°)</li>
+                  <li>Green slice (~180°) smaller than required 216°</li>
+                </ul>
+              </div>
+            </div>
+            <p class="text-sm mt-3 text-gray-800 dark:text-gray-200">
+              <strong>Instruction:</strong> Adjust all pie slices so their angles match exact percentages: 10% = 36°, 30% = 108°, 60% = 216°. Retain colors, labels, callouts, and title.
+            </p>
+          </div>
+        </div>
+        
+        <!-- Step 6: Refinement Round 2 -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-emerald-100 dark:bg-emerald-900 flex items-center justify-center">
+              <span class="text-emerald-600 dark:text-emerald-300 font-bold">6</span>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Refinement - Round 2</h3>
+          </div>
+          
+          <div class="bg-gradient-to-br from-emerald-50 to-green-50 dark:from-emerald-900/20 dark:to-green-900/20 rounded-2xl p-8 border-2 border-emerald-200 dark:border-emerald-900">
+            <div class="text-center">
+              <h4 class="text-lg font-semibold text-gray-800 dark:text-white mb-6">After Second Refinement</h4>
+              <img src="assets/case8_middle2.png" alt="After Second Refinement" class="w-full max-w-lg mx-auto rounded-lg shadow-xl border border-emerald-200">
+              <div class="mt-6 p-4 bg-white/70 dark:bg-gray-800/70 rounded-lg">
+                <div class="text-sm font-medium text-emerald-700 dark:text-emerald-300 mb-2">✅ Applied Proportional Scaling</div>
+                <ul class="text-xs text-gray-600 dark:text-gray-300 space-y-1">
+                  <li>• Teal slice reduced to 36°</li>
+                  <li>• Blue slice set to 108°</li>
+                  <li>• Green slice expanded to 216°</li>
+                  <li>• Callout lines repositioned</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Step 7: Reflection Round 3 -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-red-100 dark:bg-red-900 flex items-center justify-center">
+              <span class="text-red-600 dark:text-red-300 font-bold">7</span>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Reflection - Round 3</h3>
+          </div>
+          
+          <div class="backdrop-blur-2xl bg-gradient-to-br from-white/40 to-white/20 dark:from-black/40 dark:to-black/20 rounded-2xl p-6 border border-white/30 dark:border-white/15">
+            <div class="text-xs font-semibold text-red-600 dark:text-red-400 mb-3 drop-shadow-md">🔍 FINAL ADJUSTMENT</div>
+            <p class="text-sm leading-relaxed text-gray-800 dark:text-gray-200">
+              Minor alignment issues detected:
+            </p>
+            <div class="mt-4 bg-red-50 dark:bg-red-900/20 p-4 rounded-lg">
+              <div class="text-sm font-medium text-red-700 dark:text-red-300">
+                🔍 Precision Tuning Needed:
+                <ul class="mt-1 space-y-1">
+                  <li>The boundary between blue and green slice slightly misaligned</li>
+                  <li>Label overlap near center point</li>
+                </ul>
+              </div>
+            </div>
+            <p class="text-sm mt-3 text-gray-800 dark:text-gray-200">
+              <strong>Instruction:</strong> Fine-tune the angular positions of all slices to ensure perfect adjacency. Adjust callout line angles to avoid overlap and improve readability.
+            </p>
+          </div>
+        </div>
+        
+        <!-- Step 8: Refinement Round 3 -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-violet-100 dark:bg-violet-900 flex items-center justify-center">
+              <span class="text-violet-600 dark:text-violet-300 font-bold">8</span>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Refinement - Round 3</h3>
+          </div>
+          
+          <div class="bg-gradient-to-br from-violet-50 to-indigo-50 dark:from-violet-900/20 dark:to-indigo-900/20 rounded-2xl p-8 border-2 border-violet-200 dark:border-violet-900">
+            <div class="text-center">
+              <h4 class="text-lg font-semibold text-gray-800 dark:text-white mb-6">Final Geometric Alignment</h4>
+              <img src="assets/case8_middle3.png" alt="After Third Refinement" class="w-full max-w-lg mx-auto rounded-lg shadow-2xl border border-violet-200">
+              <div class="mt-6 p-4 bg-white/75 dark:bg-gray-800/75 rounded-lg">
+                <div class="text-sm font-medium text-violet-700 dark:text-violet-300 mb-2">📐 Final Polish Applied</div>
+                <ul class="text-xs text-gray-600 dark:text-gray-300 space-y-1">
+                  <li>• All slice boundaries precisely aligned</li>
+                  <li>• No label overlap</li>
+                  <li>• Callout lines optimized</li>
+                  <li>• Visual clarity enhanced</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Step 9: Final Output -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-green-100 dark:bg-green-900 flex items-center justify-center">
+              <span class="text-green-600 dark:text-green-300 font-bold">9</span>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">✅ Final Verified Output</h3>
+          </div>
+          
+          <div class="bg-gradient-to-r from-green-50 to-emerald-50 dark:from-green-900/20 dark:to-emerald-900/20 rounded-2xl p-8 border-2 border-green-200 dark:border-green-900">
+            <div class="text-center">
+              <h4 class="text-lg font-semibold text-gray-800 dark:text-white mb-6">Final Verified Infographic</h4>
+              <img src="assets/case8_final.png" alt="Final Verified Infographic" class="w-full max-w-lg mx-auto rounded-lg shadow-2xl">
+              <div class="mt-6 p-4 bg-white/80 dark:bg-gray-800/80 rounded-lg border border-green-100 dark:border-green-900">
+                <div class="text-sm font-medium text-green-700 dark:text-green-300 mb-2">🎯 Self-Correction Complete</div>
+                <p class="text-sm text-gray-700 dark:text-gray-300">
+                  Final audit confirms:
+                </p>
+                <ul class="text-xs text-gray-600 dark:text-gray-300 mt-2 space-y-1">
+                  <li>• Only valid categories present</li>
+                  <li>• Angles: 36° / 108° / 216° accurate</li>
+                  <li>• Labels clear and correctly positioned</li>
+                  <li>• Legend matches color scheme</li>
+                </ul>
+                <div class="text-xs font-semibold text-green-600 dark:text-green-400 mt-3">
+                  ✅ <strong>Approved. Process terminated after maximum rounds.</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</template>
+
+<!-- 案例9: 漏洞严重性分布 -->
+<template id="dialogTemplate-case9">
+  <div role="dialog" id="dialog-modal" aria-labelledby="dialog-title" data-state="open" 
+       class="fixed left-[50%] top-[50%] z-[100] w-[90vw] max-w-6xl h-[95vh] translate-x-[-50%] translate-y-[-50%] rounded-3xl overflow-hidden flex flex-col data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 backdrop-blur-2xl bg-white/80 dark:bg-gray-900/80 border border-white/20 dark:border-white/10"
+       style="box-shadow: rgba(0, 0, 0, 0.3) 0px 20px 60px 0px, rgba(0, 0, 0, 0.2) 0px 8px 24px 0px, rgba(255, 255, 255, 0.4) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.15) 0px -1px 0px 0px inset; pointer-events: auto;"
+       tabindex="-1">
+    
+    <div class="flex items-center justify-between p-6 border-b border-gray-200 dark:border-gray-700">
+      <h2 id="dialog-title" class="text-2xl font-bold text-gray-900 dark:text-white">Case 9: Vulnerability Severity Distribution and Scores</h2>
+      <button class="rounded-full p-2 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors" aria-label="Close" type="button" onclick="closeDetail()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x w-6 h-6 text-gray-500 dark:text-gray-400">
+          <path d="M18 6 6 18"></path>
+          <path d="m6 6 12 12"></path>
+        </svg>
+      </button>
+    </div>
+    
+    <div class="flex-1 overflow-y-auto p-6 bg-gray-50 dark:bg-gray-950">
+      <div class="mx-auto max-w-5xl space-y-12">
+        
+        <!-- Original Data -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-gray-100 dark:bg-gray-800 flex items-center justify-center">
+              <span class="text-gray-600 dark:text-gray-300 font-bold">📊</span>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Original Data</h3>
+          </div>
+          
+          <div class="bg-white rounded-2xl p-8 border border-gray-200">
+            <h4 class="font-semibold text-gray-700 mb-6 text-center">Vulnerability Severity Distribution and Scores</h4>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div>
+                <h5 class="font-medium text-gray-600 mb-4">Score Categories</h5>
+                <div class="bg-white rounded-lg border border-gray-200 p-4">
+                  <table class="w-full text-sm">
+                    <thead class="border-b border-gray-200">
+                      <tr>
+                        <th class="text-left py-3 text-gray-600 font-medium">Score Category</th>
+                        <th class="text-right py-3 text-gray-600 font-medium">Percentage</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="border-b border-gray-100">
+                        <td class="py-3 text-gray-700">Scores of 9 or higher</td>
+                        <td class="text-right py-3 font-semibold text-red-600">28%</td>
+                      </tr>
+                      <tr>
+                        <td class="py-3 text-gray-700">Scores of 7 or higher</td>
+                        <td class="text-right py-3 font-semibold text-red-600">84%</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div>
+                <h5 class="font-medium text-gray-600 mb-4">Severity Distribution</h5>
+                <div class="bg-white rounded-lg border border-gray-200 p-4">
+                  <table class="w-full text-sm">
+                    <thead class="border-b border-gray-200">
+                      <tr>
+                        <th class="text-left py-3 text-gray-600 font-medium">Severity</th>
+                        <th class="text-right py-3 text-gray-600 font-medium">Percentage</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="py-2 text-red-600">CRITICAL</td>
+                        <td class="text-right py-2 font-medium">5.1%</td>
+                      </tr>
+                      <tr>
+                        <td class="py-2 text-orange-600">HIGH</td>
+                        <td class="text-right py-2 font-medium">65.3%</td>
+                      </tr>
+                      <tr>
+                        <td class="py-2 text-yellow-600">MEDIUM</td>
+                        <td class="text-right py-2 font-medium">12.4%</td>
+                      </tr>
+                      <tr>
+                        <td class="py-2 text-blue-600">LOW</td>
+                        <td class="text-right py-2 font-medium">17.2%</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Step 1: Rewriting -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-purple-100 dark:bg-purple-900 flex items-center justify-center">
+              <span class="text-purple-600 dark:text-purple-300 font-bold">1</span>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Rewriting - Enhanced Prompt</h3>
+          </div>
+          
+          <div class="backdrop-blur-2xl bg-gradient-to-br from-white/40 to-white/20 dark:from-black/40 dark:to-black/20 rounded-2xl p-6 border border-white/30 dark:border-white/15">
+            <div class="text-xs font-semibold text-purple-600 dark:text-purple-400 mb-3 drop-shadow-md">🚀 ENHANCED AI PROMPT</div>
+            <p class="text-sm leading-relaxed text-gray-800 dark:text-gray-200">
+              A professional infographic dashboard titled "Vulnerability Severity Distribution and Scores".
+            </p>
+            <p class="text-sm leading-relaxed text-gray-800 dark:text-gray-200 mt-3">
+              Background: Dark charcoal gray (#2c3e50), modern high-contrast look.
+            </p>
+            <p class="text-sm leading-relaxed text-gray-800 dark:text-gray-200 mt-3">
+              <strong>Main Feature:</strong> Large donut chart on the left:
+              <ul class="list-disc list-inside ml-5 mt-1 space-y-1">
+                <li><strong>CRITICAL:</strong> 5.1%, deep red (#e74c3c)</li>
+                <li><strong>HIGH:</strong> 65.3%, warning orange (#f39c12)</li>
+                <li><strong>MEDIUM:</strong> 12.4%, amber yellow (#f1c40f)</li>
+                <li><strong>LOW:</strong> 17.2%, calm blue (#3498db)</li>
+              </ul>
+              Each segment has a clean white sans-serif label. Center: glowing white shield icon.
+            </p>
+            <p class="text-sm leading-relaxed text-gray-800 dark:text-gray-200 mt-3">
+              <strong>Side Panel:</strong> Two KPI cards on right:
+              <ul class="list-disc list-inside ml-5 mt-1 space-y-1">
+                <li><strong>Top:</strong> "28%" — "Scores of 9 or higher"</li>
+                <li><strong>Bottom:</strong> "84%" — "Scores of 7 or higher"</li>
+              </ul>
+            </p>
+            <p class="text-sm italic text-gray-500 dark:text-gray-400 mt-2">
+              Style: sleek, minimalist, corporate security report. Avoid clutter, gradients, 3D effects.
+            </p>
+          </div>
+        </div>
+        
+        <!-- Step 2: Generation -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-blue-100 dark:bg-blue-900 flex items-center justify-center">
+              <span class="text-blue-600 dark:text-blue-300 font-bold">2</span>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Generation - Initial Design</h3>
+          </div>
+          
+          <div class="bg-gray-900 rounded-2xl p-8 border-2 border-blue-900/50">
+            <div class="text-center">
+              <h4 class="text-lg font-semibold text-white mb-6">Initial Security Vulnerability Dashboard</h4>
+              <img src="assets/case9_initial.png" alt="Initial Vulnerability Dashboard" class="w-full max-w-lg mx-auto rounded-lg shadow-md">
+              <p class="text-sm text-gray-300 mt-4">
+                First version shows correct layout but contains corrupted text in HIGH slice
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Step 3: Reflection -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-orange-100 dark:bg-orange-900 flex items-center justify-center">
+              <span class="text-orange-600 dark:text-orange-300 font-bold">3</span>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Reflection - Problem Analysis</h3>
+          </div>
+          
+          <div class="backdrop-blur-2xl bg-gradient-to-br from-white/40 to-white/20 dark:from-black/40 dark:to-black/20 rounded-2xl p-6 border border-white/30 dark:border-white/15">
+            <div class="text-xs font-semibold text-red-600 dark:text-red-400 mb-3 drop-shadow-md">🔍 ISSUE DETECTED</div>
+            <p class="text-sm leading-relaxed text-gray-800 dark:text-gray-200">
+              Text corruption detected in visual rendering:
+            </p>
+            <div class="mt-4 bg-red-50 dark:bg-red-900/20 p-4 rounded-lg">
+              <div class="text-sm font-medium text-red-700 dark:text-red-300">
+                💬 Label Pollution Found:
+                <ul class="mt-1 space-y-1">
+                  <li>The <strong>HIGH (65.3%)</strong> segment displays an extraneous string "<code>f3512</code>"</li>
+                  <li>This is likely a rendering artifact or hallucinated token</li>
+                </ul>
+              </div>
+            </div>
+            <p class="text-sm mt-3 text-gray-800 dark:text-gray-200">
+              <strong>Instruction:</strong> Remove the alphanumeric string 'f3512' and any distorted characters from the orange HIGH slice. Ensure only the clean label 'HIGH 65.3%' remains, clearly visible and unobstructed. Preserve all other chart elements, colors, proportions, and design integrity.
+            </p>
+          </div>
+        </div>
+        
+        <!-- Step 4: Refinement Round 1 -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-teal-100 dark:bg-teal-900 flex items-center justify-center">
+              <span class="text-teal-600 dark:text-teal-300 font-bold">4</span>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Refinement - Round 1</h3>
+          </div>
+          
+          <div class="bg-gradient-to-br from-sky-50 to-cyan-50 dark:from-sky-900/20 dark:to-cyan-900/20 rounded-2xl p-8 border-2 border-sky-200 dark:border-sky-900">
+            <div class="text-center">
+              <h4 class="text-lg font-semibold text-gray-800 dark:text-white mb-6">After First Refinement</h4>
+              <img src="assets/case9_middle1.png" alt="After First Refinement" class="w-full max-w-lg mx-auto rounded-lg shadow-lg border border-sky-200">
+              <div class="mt-6 p-4 bg-white/60 dark:bg-gray-800/60 rounded-lg">
+                <div class="text-sm font-medium text-sky-700 dark:text-sky-300 mb-2">🔧 Cleaned Label Rendering</div>
+                <ul class="text-xs text-gray-600 dark:text-gray-300 space-y-1">
+                  <li>• Removed corrupted string 'f3512'</li>
+                  <li>• Restored clear 'HIGH 65.3%' label</li>
+                  <li>• Color and position preserved</li>
+                  <li>• No unintended side effects</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Step 5: Final Output -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-emerald-100 dark:bg-emerald-900 flex items-center justify-center">
+              <span class="text-emerald-600 dark:text-emerald-300 font-bold">5</span>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">✅ Final Verified Output</h3>
+          </div>
+          
+          <div class="bg-gradient-to-r from-emerald-50 to-green-50 dark:from-emerald-900/20 dark:to-green-900/20 rounded-2xl p-8 border-2 border-emerald-200 dark:border-emerald-900">
+            <div class="text-center">
+              <h4 class="text-lg font-semibold text-gray-800 dark:text-white mb-6">Final Verified Dashboard</h4>
+              <img src="assets/case9_final.png" alt="Final Verified Dashboard" class="w-full max-w-lg mx-auto rounded-lg shadow-2xl">
+              <div class="mt-6 p-4 bg-white/70 dark:bg-gray-800/70 rounded-lg border border-emerald-100 dark:border-emerald-900">
+                <div class="text-sm font-medium text-emerald-700 dark:text-emerald-300 mb-2">🎯 Self-Correction Complete</div>
+                <p class="text-sm text-gray-700 dark:text-gray-300">
+                  Final audit confirms:
+                </p>
+                <ul class="text-xs text-gray-600 dark:text-gray-300 mt-2 space-y-1">
+                  <li>• All labels clean and legible</li>
+                  <li>• Donut proportions accurate</li>
+                  <li>• KPI cards correctly display 28% and 84%</li>
+                  <li>• Shield icon centered and styled</li>
+                </ul>
+                <div class="text-xs font-semibold text-emerald-600 dark:text-emerald-400 mt-3">
+                  ✅ <strong>No further issues found. Output approved.</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</template>
+<!-- 案例10: 公众对科学进展的优先级 -->
+<template id="dialogTemplate-case10">
+  <div role="dialog" id="dialog-modal" aria-labelledby="dialog-title" data-state="open" 
+       class="fixed left-[50%] top-[50%] z-[100] w-[90vw] max-w-6xl h-[95vh] translate-x-[-50%] translate-y-[-50%] rounded-3xl overflow-hidden flex flex-col data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 backdrop-blur-2xl bg-white/80 dark:bg-gray-900/80 border border-white/20 dark:border-white/10"
+       style="box-shadow: rgba(0, 0, 0, 0.3) 0px 20px 60px 0px, rgba(0, 0, 0, 0.2) 0px 8px 24px 0px, rgba(255, 255, 255, 0.4) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.15) 0px -1px 0px 0px inset; pointer-events: auto;"
+       tabindex="-1">
+    
+    <div class="flex items-center justify-between p-6 border-b border-gray-200 dark:border-gray-700">
+      <h2 id="dialog-title" class="text-2xl font-bold text-gray-900 dark:text-white">Case 10: Public Priorities for Scientific Advancements</h2>
+      <button class="rounded-full p-2 hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors" aria-label="Close" type="button" onclick="closeDetail()">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-x w-6 h-6 text-gray-500 dark:text-gray-400">
+          <path d="M18 6 6 18"></path>
+          <path d="m6 6 12 12"></path>
+        </svg>
+      </button>
+    </div>
+    
+    <div class="flex-1 overflow-y-auto p-6 bg-gray-50 dark:bg-gray-950">
+      <div class="mx-auto max-w-5xl space-y-12">
+        
+        <!-- Original Data -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-gray-100 dark:bg-gray-800 flex items-center justify-center">
+              <span class="text-gray-600 dark:text-gray-300 font-bold">📊</span>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Original Data</h3>
+          </div>
+          
+          <div class="bg-white rounded-2xl p-8 border border-gray-200">
+            <h4 class="font-semibold text-gray-700 mb-6 text-center">Public Priorities for Scientific Advancements</h4>
+            <div class="bg-white rounded-lg border border-gray-200 p-6">
+              <table class="w-full text-sm">
+                <thead class="border-b border-gray-200">
+                  <tr>
+                    <th class="text-left py-3 text-gray-600 font-medium">Priority</th>
+                    <th class="text-right py-3 text-gray-600 font-medium">Support</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="border-b border-gray-100">
+                    <td class="py-3 text-gray-700">Finding cures for diseases</td>
+                    <td class="text-right py-3 font-semibold text-green-600">79%</td>
+                  </tr>
+                  <tr class="border-b border-gray-100">
+                    <td class="py-3 text-gray-700">Reducing poverty and hunger</td>
+                    <td class="text-right py-3 font-semibold text-blue-600">61%</td>
+                  </tr>
+                  <tr class="border-b border-gray-100">
+                    <td class="py-3 text-gray-700">Improving education</td>
+                    <td class="text-right py-3 font-semibold text-teal-600">56%</td>
+                  </tr>
+                  <tr class="border-b border-gray-100">
+                    <td class="py-3 text-gray-700">Developing clean energy</td>
+                    <td class="text-right py-3 font-semibold text-cyan-600">55%</td>
+                  </tr>
+                  <tr class="border-b border-gray-100">
+                    <td class="py-3 text-gray-700">Protecting the environment</td>
+                    <td class="text-right py-3 font-semibold text-emerald-600">54%</td>
+                  </tr>
+                  <tr class="border-b border-gray-100">
+                    <td class="py-3 text-gray-700">Improving public health</td>
+                    <td class="text-right py-3 font-semibold text-lime-600">53%</td>
+                  </tr>
+                  <tr class="border-b border-gray-100">
+                    <td class="py-3 text-gray-700">Addressing disabilities</td>
+                    <td class="text-right py-3 font-semibold text-violet-600">43%</td>
+                  </tr>
+                  <tr class="border-b border-gray-100">
+                    <td class="py-3 text-gray-700">Promoting economic growth</td>
+                    <td class="text-right py-3 font-semibold text-indigo-600">35%</td>
+                  </tr>
+                  <tr class="border-b border-gray-100">
+                    <td class="py-3 text-gray-700">Improving national defense</td>
+                    <td class="text-right py-3 font-semibold text-gray-600">32%</td>
+                  </tr>
+                  <tr class="border-b border-gray-100">
+                    <td class="py-3 text-gray-700">Improving transportation safety</td>
+                    <td class="text-right py-3 font-semibold text-gray-600">30%</td>
+                  </tr>
+                  <tr>
+                    <td class="py-3 text-gray-700">Space exploration</td>
+                    <td class="text-right py-3 font-semibold text-gray-600">16%</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Step 1: Rewriting -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-purple-100 dark:bg-purple-900 flex items-center justify-center">
+              <span class="text-purple-600 dark:text-purple-300 font-bold">1</span>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Rewriting - Enhanced Prompt</h3>
+          </div>
+          
+          <div class="backdrop-blur-2xl bg-gradient-to-br from-white/40 to-white/20 dark:from-black/40 dark:to-black/20 rounded-2xl p-6 border border-white/30 dark:border-white/15">
+            <div class="text-xs font-semibold text-purple-600 dark:text-purple-400 mb-3 drop-shadow-md">🚀 ENHANCED AI PROMPT</div>
+            <p class="text-sm leading-relaxed text-gray-800 dark:text-gray-200">
+              An ultra-detailed infographic titled "Public Priorities for Scientific Advancements".
+            </p>
+            <p class="text-sm leading-relaxed text-gray-800 dark:text-gray-200 mt-3">
+              Layout: Clean vertical bar chart on light gray background with subtle grid.
+            </p>
+            <p class="text-sm leading-relaxed text-gray-800 dark:text-gray-200 mt-3">
+              11 horizontal bars, ordered by percentage descending:
+              <ul class="list-disc list-inside ml-5 mt-1 space-y-1">
+                <li><strong>Finding cures (79%)</strong>: warm orange</li>
+                <li>All others: cool blues, teals, greens</li>
+              </ul>
+            </p>
+            <p class="text-sm leading-relaxed text-gray-800 dark:text-gray-200 mt-3">
+              Icons (left of each bar):
+              <ul class="list-disc list-inside ml-5 mt-1 space-y-1">
+                <li>DNA helix → Diseases</li>
+                <li>Wheat stalk → Poverty & Hunger</li>
+                <li>Graduation cap → Education</li>
+                <li>Wind turbine → Energy</li>
+                <li>Leaf → Environment</li>
+                <li>Stethoscope → Public Health</li>
+                <li>Accessibility symbol → Disabilities</li>
+                <li>Rising graph → Economic Growth</li>
+                <li>Shield → Defense</li>
+                <li>Seatbelt → Safety</li>
+                <li>Planet → Space Exploration</li>
+              </ul>
+            </p>
+            <p class="text-sm italic text-gray-500 dark:text-gray-400 mt-2">
+              Style: minimalist flat vector art, soft shadows, high-resolution (8K), award-winning design.
+            </p>
+          </div>
+        </div>
+        
+        <!-- Step 2: Generation -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-blue-100 dark:bg-blue-900 flex items-center justify-center">
+              <span class="text-blue-600 dark:text-blue-300 font-bold">2</span>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Generation - Initial Design</h3>
+          </div>
+          
+          <div class="bg-white dark:bg-gray-800 rounded-2xl p-8 border-2 border-blue-200 dark:border-blue-900">
+            <div class="text-center">
+              <h4 class="text-lg font-semibold text-gray-800 dark:text-white mb-6">Initial Scientific Priorities Bar Chart</h4>
+              <img src="assets/case10_initial.png" alt="Initial Scientific Priorities" class="w-full max-w-lg mx-auto rounded-lg shadow-md">
+              <p class="text-sm text-gray-600 dark:text-gray-300 mt-4">
+                First version shows incorrect label: "613%" instead of "61%"
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Step 3: Reflection -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-orange-100 dark:bg-orange-900 flex items-center justify-center">
+              <span class="text-orange-600 dark:text-orange-300 font-bold">3</span>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Reflection - Problem Analysis</h3>
+          </div>
+          
+          <div class="backdrop-blur-2xl bg-gradient-to-br from-white/40 to-white/20 dark:from-black/40 dark:to-black/20 rounded-2xl p-6 border border-white/30 dark:border-white/15">
+            <div class="text-xs font-semibold text-red-600 dark:text-red-400 mb-3 drop-shadow-md">🔍 ISSUE DETECTED</div>
+            <p class="text-sm leading-relaxed text-gray-800 dark:text-gray-200">
+              Critical numeric error found in data labeling:
+            </p>
+            <div class="mt-4 bg-red-50 dark:bg-red-900/20 p-4 rounded-lg">
+              <div class="text-sm font-medium text-red-700 dark:text-red-300">
+                ❌ Hallucinated Value:
+                <ul class="mt-1 space-y-1">
+                  <li>The second bar incorrectly labels "<strong>613%</strong>" instead of "<strong>61%</strong>"</li>
+                  <li>This is a 10x exaggeration — fundamentally misleading</li>
+                </ul>
+              </div>
+            </div>
+            <p class="text-sm mt-3 text-gray-800 dark:text-gray-200">
+              <strong>Instruction:</strong> Replace the second bar's label from 'Improving Education and How Our Children Learn – 56%' to '<strong>Reducing Poverty and Hunger – 61%</strong>'. Adjust the bar length to visually match 61% relative to the 79% bar above. Keep color, icon (wheat stalk), and layout consistent.
+            </p>
+          </div>
+        </div>
+        
+        <!-- Step 4: Refinement Round 1 -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-teal-100 dark:bg-teal-900 flex items-center justify-center">
+              <span class="text-teal-600 dark:text-teal-300 font-bold">4</span>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">Refinement - Round 1</h3>
+          </div>
+          
+          <div class="bg-gradient-to-br from-sky-50 to-cyan-50 dark:from-sky-900/20 dark:to-cyan-900/20 rounded-2xl p-8 border-2 border-sky-200 dark:border-sky-900">
+            <div class="text-center">
+              <h4 class="text-lg font-semibold text-gray-800 dark:text-white mb-6">After First Refinement</h4>
+              <img src="assets/case10_middle1.png" alt="After First Refinement" class="w-full max-w-lg mx-auto rounded-lg shadow-lg border border-sky-200">
+              <div class="mt-6 p-4 bg-white/60 dark:bg-gray-800/60 rounded-lg">
+                <div class="text-sm font-medium text-sky-700 dark:text-sky-300 mb-2">🔧 Fixed Label & Proportion</div>
+                <ul class="text-xs text-gray-600 dark:text-gray-300 space-y-1">
+                  <li>• Corrected "613%" → "61%"</li>
+                  <li>• Updated category name</li>
+                  <li>• Bar length adjusted to 61% scale</li>
+                  <li>• Icon and color preserved</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Step 5: Final Output -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-full bg-emerald-100 dark:bg-emerald-900 flex items-center justify-center">
+              <span class="text-emerald-600 dark:text-emerald-300 font-bold">5</span>
+            </div>
+            <h3 class="text-xl font-semibold text-gray-900 dark:text-white">✅ Final Verified Output</h3>
+          </div>
+          
+          <div class="bg-gradient-to-r from-emerald-50 to-green-50 dark:from-emerald-900/20 dark:to-green-900/20 rounded-2xl p-8 border-2 border-emerald-200 dark:border-emerald-900">
+            <div class="text-center">
+              <h4 class="text-lg font-semibold text-gray-800 dark:text-white mb-6">Final Verified Infographic</h4>
+              <img src="assets/case10_final.png" alt="Final Verified Infographic" class="w-full max-w-lg mx-auto rounded-lg shadow-2xl">
+              <div class="mt-6 p-4 bg-white/70 dark:bg-gray-800/70 rounded-lg border border-emerald-100 dark:border-emerald-900">
+                <div class="text-sm font-medium text-emerald-700 dark:text-emerald-300 mb-2">🎯 Self-Correction Complete</div>
+                <p class="text-sm text-gray-700 dark:text-gray-300">
+                  Final audit confirms:
+                </p>
+                <ul class="text-xs text-gray-600 dark:text-gray-300 mt-2 space-y-1">
+                  <li>• All labels accurate and legible</li>
+                  <li>• Bar lengths proportionally correct</li>
+                  <li>• Top priority highlighted in orange</li>
+                  <li>• Icons semantically appropriate</li>
+                </ul>
+                <div class="text-xs font-semibold text-emerald-600 dark:text-emerald-400 mt-3">
+                  ✅ <strong>No further issues found. Output approved.</strong>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</template>
+
+
+
+
+
+
+<!-- JavaScript 代码 -->
+<script>
+let currentDialog = null;
+
+document.addEventListener('DOMContentLoaded', function() {
+  const productCards = document.querySelectorAll('.group.product');
+  productCards.forEach(card => {
+    card.style.cursor = 'pointer';
+    
+    card.addEventListener('mouseenter', function() {
+      const beforeDivs = this.querySelectorAll('.z-\\[1\\]');
+      const afterDivs = this.querySelectorAll('.z-\\[2\\]');
+      
+      beforeDivs.forEach(div => {
+        if (div) div.style.opacity = '0';
+      });
+      afterDivs.forEach(div => {
+        if (div) div.style.opacity = '1';
+      });
+    });
+    
+    card.addEventListener('mouseleave', function() {
+      const beforeDivs = this.querySelectorAll('.z-\\[1\\]');
+      const afterDivs = this.querySelectorAll('.z-\\[2\\]');
+      
+      beforeDivs.forEach(div => {
+        if (div) div.style.opacity = '1';
+      });
+      afterDivs.forEach(div => {
+        if (div) div.style.opacity = '0';
+      });
+    });
+  });
+});
+
+function openCaseDetail(caseId) {
+  if (currentDialog) {
+    document.body.removeChild(currentDialog);
+    currentDialog = null;
+  }
+  
+  const template = document.getElementById(`dialogTemplate-${caseId}`);
+  if (!template) {
+    console.error('Template not found:', `dialogTemplate-${caseId}`);
+    alert(`Case ${caseId} details not available yet.`);
+    return;
+  }
+  
+  const dialogContent = document.createElement('div');
+  dialogContent.innerHTML = template.innerHTML;
+  const dialog = dialogContent.firstElementChild;
+  
+  if (!dialog) {
+    console.error('Dialog element not found in template');
+    return;
+  }
+  
+  document.body.appendChild(dialogContent);
+  currentDialog = dialog;
+  
+  const closeButton = dialog.querySelector('button[onclick="closeDetail()"]');
+  if (closeButton) {
+    closeButton.onclick = closeDetail;
+  }
+  
+  const escapeHandler = function(e) {
+    if (e.key === 'Escape') {
+      closeDetail();
+    }
+  };
+  
+  const clickHandler = function(e) {
+    if (e.target === dialog) {
+      closeDetail();
+    }
+  };
+  
+  dialog.addEventListener('keydown', escapeHandler);
+  dialog.addEventListener('click', clickHandler);
+  
+  document.body.style.overflow = 'hidden';
+}
+
+function closeDetail() {
+  if (currentDialog) {
+    currentDialog.setAttribute('data-state', 'closed');
+    
+    setTimeout(() => {
+      if (currentDialog && currentDialog.parentNode) {
+        currentDialog.parentNode.removeChild(currentDialog);
+      }
+      currentDialog = null;
+      
+      document.body.style.overflow = '';
+    }, 300);
+  }
+}
+</script>
+
+<style>
+.group.product:hover .z-\[1\] {
+  opacity: 0 !important;
+  transition: opacity 0.3s ease !important;
+}
+
+.group.product:hover .z-\[2\] {
+  opacity: 1 !important;
+  transition: opacity 0.3s ease !important;
+}
+
+.group.product,
+.group.product * {
+  cursor: pointer !important;
+}
+
+[data-state="open"] {
+  animation: fadeIn 0.3s ease;
+}
+
+[data-state="closed"] {
+  animation: fadeOut 0.3s ease;
+}
+
+@keyframes fadeIn {
+  from { 
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.95);
+  }
+  to { 
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+@keyframes fadeOut {
+  from { 
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+  to { 
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.95);
+  }
+}
+</style>
+
+
     </section>
 
     <!-- BIBTEX -->
